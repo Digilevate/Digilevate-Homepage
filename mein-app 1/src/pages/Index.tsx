@@ -30,16 +30,17 @@ const Index = () => {
       <footer className="bg-foreground text-background py-8 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-6 h-6 bg-gradient-primary rounded flex items-center justify-center">
-              <span className="text-xs font-bold text-primary-foreground">D</span>
-            </div>
-            <span className="text-lg font-bold">DesignTeam</span>
+             <img
+                src="ChatGPT Image 31. Aug. 2025, 14_45_43 - Kopie.png"
+                width={150} 
+                alt="Eine Beschreibung des Bildes für Barrierefreiheit"
+              />
           </div>
           <p className="text-background/70 mb-4">
             Crafting beautiful digital experiences that convert.
           </p>
           <p className="text-background/50 text-sm">
-            © 2024 DesignTeam. All rights reserved.
+            © 2025 Digilevate. All rights reserved.
           </p>
         </div>
       </footer>
