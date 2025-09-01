@@ -15,7 +15,7 @@ export const Navigation = () => {
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               <img
-                src="public\ChatGPT Image 31. Aug. 2025, 14_45_43 - Kopie.png"
+                src="ChatGPT Image 31. Aug. 2025, 14_45_43 - Kopie.png"
                 width={200} 
                 alt="Eine Beschreibung des Bildes für Barrierefreiheit"
               />
