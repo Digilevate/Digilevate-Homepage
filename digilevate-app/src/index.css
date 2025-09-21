@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    @apply bg-gray-900;
+}
+.gradient-text {
+    background: linear-gradient(135deg, #2d9bf0 0%, #4db8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.glass-effect {
+    background: rgba(45, 155, 240, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(45, 155, 240, 0.2);
+}
+.hover-glow:hover {
+    box-shadow: 0 0 30px rgba(45, 155, 240, 0.3);
+    transform: translateY(-2px);
+}
