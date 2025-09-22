@@ -50,12 +50,12 @@ const Header: React.FC = () => {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="md:hidden absolute top-16 left-0 right-0 glass-effect">
-                        <nav className="px-4 py-4 space-y-4">
+                    <div className="md:hidden absolute top-16 left-0 right-0 bg-[#0a2a38]/95 backdrop-blur-lg border-b border-[#2d4a5f]">
+                        <nav className="px-4 pt-2 pb-4 space-y-2">
                             {navLinks.map(link => (
-                                <a key={link.href} href={link.href} onClick={handleLinkClick} className="block text-white hover:text-[#2d9bf0] transition-colors">{link.label}</a>
+                                <a key={link.href} href={link.href} onClick={handleLinkClick} className="block text-white hover:text-[#2d9bf0] transition-colors px-2 py-2 rounded-md">{link.label}</a>
                             ))}
-                            <a href="#contact" onClick={handleLinkClick} className="w-full block text-center bg-[#2d9bf0] hover:bg-[#4db8ff] text-white mt-4 py-2 rounded-lg">
+                            <a href="#contact" onClick={handleLinkClick} className="w-full block text-center bg-[#2d9bf0] hover:bg-[#4db8ff] text-white mt-2 py-2 rounded-lg">
                                 Get Free Quote
                             </a>
                         </nav>
