@@ -19,9 +19,10 @@ const HeroSection: React.FC = () => {
                                     <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                                 ))}
                             </div>
-                            <span className="text-gray-300">Trusted by 50+ businesses</span>
+                            <span className="text-gray-300">
+                                <a href="https://share.google/KStDexyWjx9ltmwPe" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-200"> Trusted by 10+ businesses </a>
+                            </span>
                         </div>
-
                         <div className="space-y-4">
                             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                                 We Build Websites That <span className="gradient-text">Elevate</span> Your Business
