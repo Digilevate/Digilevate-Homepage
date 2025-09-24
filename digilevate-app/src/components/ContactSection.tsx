@@ -24,8 +24,6 @@ const ContactSection: React.FC = () => {
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  const handleChange = e => setFormData({[e.target.name]: e.target.value});
-
   const encode = (data: any) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
