@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { Send, CheckCircle, Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection: React.FC = () => {
@@ -22,39 +22,6 @@ const ContactSection: React.FC = () => {
   ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
-  };
-
-  const encode = (data: any) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    // Simulate API call
-    await new Promise((res) => setTimeout(res, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      project_type: "",
-      budget: "",
-      timeline: "",
-      message: "",
-    });
   };
 
   if (isSubmitted) {
@@ -102,15 +69,17 @@ const ContactSection: React.FC = () => {
           <ContactInfo />
           <div className="lg:col-span-2">
             <form
-              onSubmit={handleSubmit}
+              method="POST"
               className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              name="contact"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <InputField
                   id="name"
+                  name="name"
                   label="Full Name *"
                   type="text"
                   value={formData.name}
@@ -120,6 +89,7 @@ const ContactSection: React.FC = () => {
                 />
                 <InputField
                   id="email"
+                  name="email"
                   label="Email Address *"
                   type="email"
                   value={formData.email}
@@ -131,6 +101,7 @@ const ContactSection: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <InputField
                   id="company"
+                  name="company"
                   label="Company"
                   type="text"
                   value={formData.company}
@@ -139,6 +110,7 @@ const ContactSection: React.FC = () => {
                 />
                 <InputField
                   id="phone"
+                  name="phone"
                   label="Phone"
                   type="tel"
                   value={formData.phone}
@@ -149,6 +121,7 @@ const ContactSection: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <SelectField
                   id="project_type"
+                  name="project_type"
                   label="Project Type"
                   value={formData.project_type}
                   onChange={handleInputChange}
@@ -162,6 +135,7 @@ const ContactSection: React.FC = () => {
                 />
                 <SelectField
                   id="budget"
+                  name="budget"
                   label="Budget Range"
                   value={formData.budget}
                   onChange={handleInputChange}
@@ -177,6 +151,7 @@ const ContactSection: React.FC = () => {
               <div className="mb-6">
                 <InputField
                   id="timeline"
+                  name="timeline"
                   label="Desired Timeline"
                   type="text"
                   value={formData.timeline}
@@ -187,6 +162,7 @@ const ContactSection: React.FC = () => {
               <div className="mb-8">
                 <TextareaField
                   id="message"
+                  name="message"
                   label="Project Details *"
                   value={formData.message}
                   onChange={handleInputChange}
