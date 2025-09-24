@@ -12,16 +12,52 @@ const ContactSection: React.FC = () => {
     timeline: "",
     message: "",
   });
-  const [isSubmitting, _setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  // Netlify-friendly submit handler (AJAX)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const form = e.currentTarget;
+      // Gather *all* fields actually present in the form (incl. honeypot + hidden form-name)
+      const fd = new FormData(form);
+      const body = new URLSearchParams();
+      fd.forEach((value, key) => body.append(key, String(value)));
+
+      const resp = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+
+      if (!resp.ok) throw new Error(`Netlify returned ${resp.status}`);
+      setIsSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        project_type: "",
+        budget: "",
+        timeline: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong sending your message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -36,8 +72,7 @@ const ContactSection: React.FC = () => {
               Thank You for Your Inquiry!
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              We've received your message and will get back to you within 24
-              hours.
+              We've received your message and will get back to you within 24 hours.
             </p>
             <button
               onClick={() => setIsSubmitted(false)}
@@ -53,7 +88,7 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className="py-24 px-4 sm:py-32 relative">
-      <div className="absolute top-20 right-20 w-96 h-96 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl"></div>
+      <div className="absolute top-20 right-20 w-96 h-96 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
@@ -67,15 +102,28 @@ const ContactSection: React.FC = () => {
 
         <div className="grid lg:grid-cols-3 gap-12">
           <ContactInfo />
+
           <div className="lg:col-span-2">
             <form
               method="POST"
-              className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500"
+              name="contact"
+              // Optional: if JS is off, Netlify will do a full-page POST-redirect here
+              action="/success/"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              name="contact"
+              onSubmit={handleSubmit}
+              className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500"
             >
+              {/* Required hidden inputs for Netlify */}
               <input type="hidden" name="form-name" value="contact" />
+              {/* Honeypot field (hidden) */}
+              <p className="hidden" aria-hidden="true">
+                <label>
+                  Don’t fill this out:
+                  <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <InputField
                   id="name"
@@ -98,6 +146,7 @@ const ContactSection: React.FC = () => {
                   required
                 />
               </div>
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <InputField
                   id="company"
@@ -118,6 +167,7 @@ const ContactSection: React.FC = () => {
                   placeholder="Your phone number"
                 />
               </div>
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <SelectField
                   id="project_type"
@@ -148,6 +198,7 @@ const ContactSection: React.FC = () => {
                   ]}
                 />
               </div>
+
               <div className="mb-6">
                 <InputField
                   id="timeline"
@@ -159,6 +210,7 @@ const ContactSection: React.FC = () => {
                   placeholder="e.g., 2-3 months, ASAP, flexible"
                 />
               </div>
+
               <div className="mb-8">
                 <TextareaField
                   id="message"
@@ -170,6 +222,7 @@ const ContactSection: React.FC = () => {
                   required
                 />
               </div>
+
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -177,18 +230,23 @@ const ContactSection: React.FC = () => {
               >
                 {isSubmitting ? (
                   <>
-                    {" "}
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>{" "}
-                    Sending...{" "}
+                    <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                    Sending...
                   </>
                 ) : (
                   <>
-                    {" "}
-                    Send Your Inquiry{" "}
-                    <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />{" "}
+                    Send Your Inquiry
+                    <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </button>
+
+              {/* No-JS notice (optional) */}
+              <noscript>
+                <p className="mt-4 text-gray-400">
+                  JavaScript is disabled; submitting will redirect to the success page.
+                </p>
+              </noscript>
             </form>
           </div>
         </div>
@@ -235,11 +293,11 @@ const ContactInfo = () => (
   </div>
 );
 
-const InfoItem: React.FC<{
-  icon: React.ReactNode;
-  title: string;
-  lines: string[];
-}> = ({ icon, title, lines }) => (
+const InfoItem: React.FC<{ icon: React.ReactNode; title: string; lines: string[] }> = ({
+  icon,
+  title,
+  lines,
+}) => (
   <div className="flex items-start space-x-4">
     <div className="w-12 h-12 bg-[#2d9bf0] rounded-full flex items-center justify-center flex-shrink-0">
       {icon}
@@ -247,10 +305,9 @@ const InfoItem: React.FC<{
     <div>
       <h4 className="text-white font-semibold mb-1">{title}</h4>
       <div className="space-y-1 text-gray-400">
-        {" "}
         {lines.map((line, i) => (
           <p key={i}>{line}</p>
-        ))}{" "}
+        ))}
       </div>
     </div>
   </div>
@@ -258,12 +315,12 @@ const InfoItem: React.FC<{
 
 const WhyItem: React.FC<{ text: string }> = ({ text }) => (
   <li className="flex items-center space-x-3">
-    <div className="w-2 h-2 bg-[#2d9bf0] rounded-full"></div>
+    <div className="w-2 h-2 bg-[#2d9bf0] rounded-full" />
     <span className="text-gray-400">{text}</span>
   </li>
 );
 
-// Form Field Components
+// Form Field Components (unchanged styles)
 const InputField: React.FC<
   React.InputHTMLAttributes<HTMLInputElement> & { label: string }
 > = ({ label, id, ...props }) => (
@@ -278,6 +335,7 @@ const InputField: React.FC<
     />
   </div>
 );
+
 const TextareaField: React.FC<
   React.TextareaHTMLAttributes<HTMLTextAreaElement> & { label: string }
 > = ({ label, id, ...props }) => (
@@ -293,11 +351,9 @@ const TextareaField: React.FC<
     />
   </div>
 );
+
 const SelectField: React.FC<
-  React.SelectHTMLAttributes<HTMLSelectElement> & {
-    label: string;
-    options: string[];
-  }
+  React.SelectHTMLAttributes<HTMLSelectElement> & { label: string; options: string[] }
 > = ({ label, id, options, ...props }) => (
   <div className="space-y-2">
     <label htmlFor={id} className="text-white text-sm font-medium">
@@ -315,11 +371,7 @@ const SelectField: React.FC<
         Select an option
       </option>
       {options.map((opt) => (
-        <option
-          key={opt}
-          value={opt.toLowerCase().replace(/ /g, "_")}
-          className="bg-[#1d4a5f]"
-        >
+        <option key={opt} value={opt.toLowerCase().replace(/ /g, "_")} className="bg-[#1d4a5f]">
           {opt}
         </option>
       ))}

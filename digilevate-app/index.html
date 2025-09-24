@@ -21,6 +21,17 @@
 </head>
   <body>
     <div id="root"></div>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="tel" name="phone" />
+      <select name="project_type"><option>New Website</option></select>
+      <select name="budget"><option>Under $5,000</option></select>
+      <input type="text" name="timeline" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
     <script type="module" src="/src/index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
