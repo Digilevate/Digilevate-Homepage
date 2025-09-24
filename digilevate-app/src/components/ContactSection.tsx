@@ -29,28 +29,27 @@ const ContactSection: React.FC = () => {
 
     try {
       const form = e.currentTarget;
-      // Gather *all* fields actually present in the form (incl. honeypot + hidden form-name)
-      const fd = new FormData(form);
-      const body = new URLSearchParams();
-      fd.forEach((value, key) => body.append(key, String(value)));
+
+      // Ensure "form-name" is always present & matches the <form name="...">
+      const payload = {
+        "form-name": form.getAttribute("name") || "contact",
+        ...Object.fromEntries(new FormData(form) as any),
+      };
 
       const resp = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString(),
+        body: new URLSearchParams(payload).toString(),
       });
 
-      if (!resp.ok) throw new Error(`Netlify returned ${resp.status}`);
+      // Helpful when things go weird: inspect the response text
+      const text = await resp.text();
+      if (!resp.ok) throw new Error(`Netlify returned ${resp.status}: ${text}`);
+
       setIsSubmitted(true);
       setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        project_type: "",
-        budget: "",
-        timeline: "",
-        message: "",
+        name: "", email: "", company: "", phone: "",
+        project_type: "", budget: "", timeline: "", message: "",
       });
     } catch (err) {
       console.error(err);
