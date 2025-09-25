@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
                                 ))}
                             </div>
                             <span className="text-gray-300">
-                                <a href="https://share.google/KStDexyWjx9ltmwPe" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-200"> Trusted by 10+ businesses </a>
+                                <a href="https://share.google/KStDexyWjx9ltmwPe" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-200"> Trusted by 20+ businesses </a>
                             </span>
                         </div>
                         <div className="space-y-4">
