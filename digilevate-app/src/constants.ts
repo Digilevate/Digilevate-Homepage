@@ -1,11 +1,12 @@
 import { Service, Project, Testimonial } from './types';
 
+// Prices are in CHF
 export const SERVICES: Service[] = [
     {
         id: 1,
         name: "Starter Site",
         tagline: "Perfect for small businesses",
-        price_from: 2500,
+        price_from: 2300, // Example value in CHF
         ideal_for: "Small businesses, startups, personal brands",
         features: [
             "Custom responsive design",
@@ -22,7 +23,7 @@ export const SERVICES: Service[] = [
         id: 2,
         name: "Business Pro",
         tagline: "Most popular choice",
-        price_from: 5500,
+        price_from: 5000, // Example value in CHF
         ideal_for: "Medium businesses, agencies, consultants",
         features: [
             "Premium custom design",
@@ -41,7 +42,7 @@ export const SERVICES: Service[] = [
         id: 3,
         name: "E-Commerce",
         tagline: "Complete online store",
-        price_from: 8500,
+        price_from: 7800, // Example value in CHF
         ideal_for: "Product businesses, online retailers",
         features: [
             "Custom e-commerce design",

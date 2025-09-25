@@ -43,9 +43,8 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
             <h3 className="text-2xl font-bold text-white mb-2">{service.name}</h3>
             <p className="text-gray-400 mb-4">{service.tagline}</p>
             <div className="text-4xl font-bold gradient-text mb-2">
-                ${service.price_from.toLocaleString()}
-            </div>
-            <p className="text-sm text-gray-400">{service.ideal_for}</p>
+            CHF {service.price_from.toLocaleString()}
+            </div>            <p className="text-sm text-gray-400">{service.ideal_for}</p>
         </div>
 
         <ul className="space-y-3 mb-8">

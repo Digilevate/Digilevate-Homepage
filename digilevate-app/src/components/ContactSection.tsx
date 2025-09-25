@@ -189,13 +189,12 @@ const ContactSection: React.FC = () => {
                   value={formData.budget}
                   onChange={handleInputChange}
                   options={[
-                    "Under $5,000",
-                    "$5,000 - $10,000",
-                    "$10,000 - $25,000",
-                    "$25,000+",
-                    "Not sure yet",
-                  ]}
-                />
+                  "Under CHF 4,500",
+                  "CHF 4,500 - CHF 9,000",
+                  "CHF 9,000 - CHF 22,000",
+                  "CHF 22,000+",
+                  "Not sure yet",
+                  ]}                />
               </div>
 
               <div className="mb-6">
