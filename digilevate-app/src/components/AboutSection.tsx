@@ -62,6 +62,8 @@ const FoundersCard: React.FC = () => (
                 name="Loris Imbrogno"
                 role="Co-Founder & Lead Developer"
                 description="Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable, performant web applications."
+                linkedinUrl="https://www.linkedin.com/in/loris-imbrogno-7861942a4"
+                emailAddress="loris.imbrogno@digilevate.com"
             />
             <div className="h-px bg-gray-700"></div>
             <FounderProfile
@@ -69,6 +71,8 @@ const FoundersCard: React.FC = () => (
                 name="Alessio Fano"
                 role="Co-Founder & Creative Director"
                 description="UI/UX designer and creative strategist with an eye for detail and user experience. Specializes in creating beautiful, conversion-focused designs."
+                linkedinUrl="https://www.linkedin.com/in/alessio-giuseppe-fano/"
+                emailAddress="alessio.fano@digilevate.com"
             />
         </div>
     </div>
@@ -79,9 +83,11 @@ interface FounderProfileProps {
     name: string;
     role: string;
     description: string;
+    linkedinUrl: string;
+    emailAddress: string;
 }
 
-const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, description }) => (
+const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, description, linkedinUrl, emailAddress }) => (
     <div className="flex flex-col items-center text-center gap-4 sm:flex-row sm:items-start sm:text-left sm:space-x-6 sm:gap-0">
         <div className="w-20 h-20 bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] rounded-full flex items-center justify-center flex-shrink-0">
             <span className="text-2xl font-bold text-white">{initial}</span>
@@ -91,12 +97,20 @@ const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, de
             <p className="text-[#2d9bf0] font-medium mb-3">{role}</p>
             <p className="text-gray-400 text-sm mb-4">{description}</p>
             <div className="flex items-center justify-center sm:justify-start space-x-4">
-                <button className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors">
+                <a
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors"
+                >
                     <Linkedin className="w-4 h-4 mr-2" /> LinkedIn
-                </button>
-                <button className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors">
+                </a>
+                <a
+                    href={`mailto:${emailAddress}`}
+                    className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors"
+                >
                     <Mail className="w-4 h-4 mr-2" /> Email
-                </button>
+                </a>
             </div>
         </div>
     </div>

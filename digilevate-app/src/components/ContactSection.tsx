@@ -264,8 +264,6 @@ const ContactInfo = () => (
           title="Email Us"
           lines={[
             "info@digilevate.com",
-            "loris.imbrogno@digilevate.com",
-            "alessio.fano@digilevate.com",
           ]}
         />
         <InfoItem
