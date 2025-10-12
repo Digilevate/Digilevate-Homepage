@@ -1,7 +1,29 @@
 import React from 'react';
-import { PROJECTS } from '../constants';
 import { Project } from '../types';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+
+const placeholderProject1: Project = {
+    id: 1,
+    title: "Physiosteo Montagna",
+    description: "A modern and professional website for a physiotherapy and osteopathy practice. The site clearly presents their services, team, and philosophy, with a focus on personalized and holistic treatment. It's designed to be welcoming and informative for new and existing patients.",
+    image_url: "/physiosteo-montagna.jpg",
+    live_url: "https://www.physiosteomontagna.ch/",
+    client_name: "Physiosteo Montagna",
+    category: "Redesign & Web Development", 
+    technologies: ["Wix", "Figma"],
+};
+
+const placeholderProject2: Project = {
+    id: 2,
+    title: "Personal Portfolio Website",
+    description: "A sleek and personal portfolio for a software engineer. It showcases his skills, experience, and a variety of projects in a clean and organized manner. The site acts as a digital resume and a testament to his passion for technology.",
+    image_url: "/alessio-fano.png",
+    live_url: "https://alessiofano.ch/",
+    client_name: "Alessio Fano",
+    category: "Web Design",
+    technologies: ["Figma", "Next.js", "Vercel"],
+};
+
 
 const PortfolioSection: React.FC = () => {
     return (
@@ -9,7 +31,7 @@ const PortfolioSection: React.FC = () => {
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
                         Our Recent <span className="gradient-text">Projects</span>
                     </h2>
@@ -18,17 +40,9 @@ const PortfolioSection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    {PROJECTS.map((project: Project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                </div>
-                
-                <div className="text-center">
-                    <button className="bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-8 py-4 rounded-lg text-lg font-semibold hover-glow transition-all duration-300 group">
-                        View All Projects
-                        <ArrowRight className="w-5 h-5 ml-2 inline-block group-hover:translate-x-1 transition-transform" />
-                    </button>
+                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                    <ProjectCard project={placeholderProject1} />
+                    <ProjectCard project={placeholderProject2} />
                 </div>
             </div>
         </section>
@@ -36,7 +50,7 @@ const PortfolioSection: React.FC = () => {
 };
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
-    <div className="glass-effect rounded-2xl overflow-hidden hover-glow transition-all duration-500 group">
+    <div className="glass-effect rounded-2xl overflow-hidden hover-glow transition-all duration-500 group animate-fade-in-up">
         <div className="relative overflow-hidden h-48">
             <img 
                 src={project.image_url} 
@@ -46,7 +60,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a2a38] via-transparent to-transparent opacity-60"></div>
             
             {project.live_url && (
-                <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-[#2d9bf0] transition-all duration-300 p-2 rounded-md">
+                <a href={project.live_url} target="_blank" rel="noopener noreferrer" className="absolute top-4 right-4 bg-black/20 backdrop-blur-sm border border-white/30 text-white hover:bg-[#2d9bf0] transition-all duration-300 p-2 rounded-md">
                     <ExternalLink className="w-4 h-4" />
                 </a>
             )}
@@ -62,7 +76,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
                 </span>
             </div>
             
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-400 text-sm leading-relaxed h-20">
                 {project.description}
             </p>
             
@@ -79,6 +93,5 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         </div>
     </div>
 );
-
 
 export default PortfolioSection;

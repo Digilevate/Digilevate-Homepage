@@ -61,6 +61,7 @@ const FoundersCard: React.FC = () => (
                 initial="L"
                 name="Loris Imbrogno"
                 role="Co-Founder & Lead Developer"
+                jobTitle="Software Engineering Apprentice in 3rd Year at Google"
                 description="Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable, performant web applications."
                 linkedinUrl="https://www.linkedin.com/in/loris-imbrogno-7861942a4"
                 emailAddress="loris.imbrogno@digilevate.com"
@@ -70,6 +71,7 @@ const FoundersCard: React.FC = () => (
                 initial="A"
                 name="Alessio Fano"
                 role="Co-Founder & Creative Director"
+                jobTitle="Software Engineering Apprentice in 3rd Year at Swisscom"
                 description="UI/UX designer and creative strategist with an eye for detail and user experience. Specializes in creating beautiful, conversion-focused designs."
                 linkedinUrl="https://www.linkedin.com/in/alessio-giuseppe-fano/"
                 emailAddress="alessio.fano@digilevate.com"
@@ -82,12 +84,13 @@ interface FounderProfileProps {
     initial: string;
     name: string;
     role: string;
+    jobTitle: string;
     description: string;
     linkedinUrl: string;
     emailAddress: string;
 }
 
-const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, description, linkedinUrl, emailAddress }) => (
+const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, jobTitle, description, linkedinUrl, emailAddress }) => (
     <div className="flex flex-col items-center text-center gap-4 sm:flex-row sm:items-start sm:text-left sm:space-x-6 sm:gap-0">
         <div className="w-20 h-20 bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] rounded-full flex items-center justify-center flex-shrink-0">
             <span className="text-2xl font-bold text-white">{initial}</span>
@@ -95,6 +98,7 @@ const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, de
         <div className="flex-1">
             <h4 className="text-xl font-bold text-white mb-1">{name}</h4>
             <p className="text-[#2d9bf0] font-medium mb-3">{role}</p>
+            <p className="text-gray-300 text-base mb-2">{jobTitle}</p>
             <p className="text-gray-400 text-sm mb-4">{description}</p>
             <div className="flex items-center justify-center sm:justify-start space-x-4">
                 <a

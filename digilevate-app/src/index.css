@@ -3,23 +3,54 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
-    @apply bg-gray-900;
+  @apply bg-gray-900;
 }
+
 .gradient-text {
-    background: linear-gradient(135deg, #2d9bf0 0%, #4db8ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: linear-gradient(135deg, #2d9bf0 0%, #4db8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
 .glass-effect {
-    background: rgba(45, 155, 240, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(45, 155, 240, 0.2);
+  background: rgba(45, 155, 240, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 155, 240, 0.2);
 }
+
 .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(45, 155, 240, 0.3);
-    transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(45, 155, 240, 0.3);
+  transform: translateY(-2px);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
 }

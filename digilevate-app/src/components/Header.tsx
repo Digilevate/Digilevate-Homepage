@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [hasScrolled, setHasScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setHasScrolled(window.scrollY > 10);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const navLinks = [
         { href: "#home", label: "Home" },
@@ -17,18 +26,19 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+            hasScrolled ? 'bg-[#0a2a38]/80 backdrop-blur-lg border-b border-[#2d4a5f]/50' : 'bg-transparent'
+        }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="flex items-center">
                         <div>
                             <img
-                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
-                width={150} 
-                alt="Eine Beschreibung des Bildes für Barrierefreiheit"
-              />
+                                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
+                                width={150} 
+                                alt="Digilevate Logo"
+                            />
                         </div>
-                       
                     </a>
 
                     <nav className="hidden md:flex items-center space-x-8">

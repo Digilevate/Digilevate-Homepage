@@ -31,7 +31,7 @@ const ServicesSection: React.FC = () => {
 };
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-    <div className={`glass-effect rounded-2xl p-8 hover-glow transition-all duration-500 relative ${service.popular ? 'ring-2 ring-[#2d9bf0] scale-105' : ''}`}>
+    <div className={`glass-effect rounded-2xl p-8 transition-all duration-300 relative flex flex-col ${service.popular ? 'ring-2 ring-[#2d9bf0] scale-105 hover:ring-4' : 'hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#2d9bf0]/20'}`}>
         {service.popular && (
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#2d9bf0] text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center">
                 <Star className="w-4 h-4 mr-1 fill-current" />
@@ -41,16 +41,17 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
 
         <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-white mb-2">{service.name}</h3>
-            <p className="text-gray-400 mb-4">{service.tagline}</p>
+            <p className="text-gray-400 mb-4 h-10">{service.tagline}</p>
             <div className="text-4xl font-bold gradient-text mb-2">
-            CHF {service.price_from.toLocaleString()}
-            </div>            <p className="text-sm text-gray-400">{service.ideal_for}</p>
+                CHF {service.price_from.toLocaleString()}
+            </div>
+            <p className="text-sm text-gray-400">{service.ideal_for}</p>
         </div>
 
-        <ul className="space-y-3 mb-8">
+        <ul className="space-y-3 mb-8 flex-grow">
             {service.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-[#2d9bf0] rounded-full flex items-center justify-center flex-shrink-0">
+                <li key={idx} className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-[#2d9bf0] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <Check className="w-3 h-3 text-white" />
                     </div>
                     <span className="text-gray-300">{feature}</span>
@@ -58,7 +59,7 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
             ))}
         </ul>
 
-        <a href="#contact" className={`w-full text-center group py-3 px-4 rounded-lg transition-all duration-300 inline-block ${
+        <a href="#contact" className={`w-full text-center group py-3 px-4 rounded-lg transition-all duration-300 inline-block mt-auto ${
             service.popular
                 ? 'bg-[#2d9bf0] hover:bg-[#4db8ff] text-white'
                 : 'bg-transparent border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white'
