@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
                             </p>
                         </div>
                         <ul className="space-y-4">
-                           <ListItem text="10+ years combined experience in web development" />
+                           <ListItem text="15+ years combined experience in web development" />
                            <ListItem text="Experts in modern web technologies and design trends" />
                            <ListItem text="Committed to delivering exceptional results" />
                         </ul>
