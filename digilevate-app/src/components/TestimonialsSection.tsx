@@ -1,7 +1,7 @@
 import React from 'react';
 import { TESTIMONIALS } from '../constants';
 import { Testimonial } from '../types';
-import { Star, Quote } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 const TestimonialsSection: React.FC = () => {
     return (

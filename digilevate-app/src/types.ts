@@ -16,7 +16,7 @@ export interface Project {
     image_url: string;
     live_url?: string;
     technologies: string[];
-    category: 'website' | 'ecommerce' | 'webapp' | 'redesign';
+    category: 'website' | 'ecommerce' | 'webapp' | 'redesign' | 'Redesign & Web Development' | 'Web Design';
 }
 
 export interface Testimonial {
