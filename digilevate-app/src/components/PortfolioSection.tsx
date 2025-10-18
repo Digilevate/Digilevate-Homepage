@@ -10,7 +10,7 @@ const placeholderProject1: Project = {
     live_url: "https://www.physiosteomontagna.ch/",
     client_name: "Physiosteo Montagna",
     category: "Redesign & Web Development", 
-    technologies: ["Wix", "Figma"],
+    technologies: ["Wix", "Figma", "OVH"],
 };
 
 const placeholderProject2: Project = {
