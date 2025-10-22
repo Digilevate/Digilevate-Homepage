@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                             {t('header.get_free_quote')}
                         </a>
                         <button
-                            className="flex items-center px-6 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-[#2d9bf0] hover:text-white transition-colors ml-4"
+                            className="flex items-center px-6 py-2 rounded-lg border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white transition-colors ml-4"
                             onClick={changeLanguage}
                         >
                             <Globe className="w-4 h-4 mr-2" />
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
                                 {t('header.get_free_quote')}
                             </a>
                             <button
-                                className="w-full flex items-center justify-center px-6 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-[#2d9bf0] hover:text-white transition-colors mt-4"
+                                className="w-full flex items-center justify-center px-6 py-2 rounded-lg border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white transition-colors mt-4"
                                 onClick={changeLanguage}
                             >
                                 <Globe className="w-4 h-4 mr-2" />
