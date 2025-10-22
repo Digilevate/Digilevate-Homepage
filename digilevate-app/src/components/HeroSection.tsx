@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Play, Star } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <section id="home" className="py-24 px-4 sm:py-32 lg:py-40 min-h-screen flex items-center relative overflow-hidden">
             <div className="absolute inset-0">
@@ -18,26 +20,26 @@ const HeroSection: React.FC = () => {
                         ))}
                     </div>
                     <span className="text-gray-300">
-                        <a href="https://share.google/KStDexyWjx9ltmwPe" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-200"> Trusted by 20+ businesses </a>
+                        <a href="https://share.google/KStDexyWjx9ltmwPe" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors duration-200"> {t('hero.trusted_by')} </a>
                     </span>
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in-up animation-delay-200">
-                    We Build Websites That <span className="gradient-text">Elevate</span> Your Business
+                    {t('hero.title_part1')} <span className="gradient-text">{t('hero.title_part2')}</span>{t('hero.title_part3')}
                 </h1>
 
                 <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-10 animate-fade-in-up animation-delay-400">
-                    Stunning design, powerful performance, and measurable results. We are Digilevate, your partners in digital growth and online success.
+                    {t('hero.description')}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
                     <a href="#contact" className="w-full sm:w-auto bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-8 py-4 rounded-lg text-lg font-semibold hover-glow transition-all duration-300 group inline-flex items-center justify-center">
-                        Get Your Free Quote
+                        {t('hero.get_quote')}
                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </a>
                     <a href="#work" className="w-full sm:w-auto border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 group inline-flex items-center justify-center">
                         <Play className="w-5 h-5 mr-2" />
-                        View Our Work
+                        {t('hero.view_work')}
                     </a>
                 </div>
             </div>

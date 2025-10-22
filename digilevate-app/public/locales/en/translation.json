@@ -1,0 +1,211 @@
+{
+  "hero": {
+    "trusted_by": "Trusted by 20+ businesses",
+    "title_part1": "We Build Websites That ",
+    "title_part2": "Elevate",
+    "title_part3": " Your Business",
+    "description": "Stunning design, powerful performance, and measurable results. We are Digilevate, your partners in digital growth and online success.",
+    "get_quote": "Get Your Free Quote",
+    "view_work": "View Our Work"
+  },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "our_work": "Our Work",
+    "about_us": "About Us",
+    "contact": "Contact",
+    "get_free_quote": "Get Free Quote"
+  },
+  "services_section": {
+    "title_part1": "Find the Perfect ",
+    "title_part2": "Plan",
+    "title_part3": " for You",
+    "description": "From stunning starter sites to full e-commerce solutions, we have the perfect package to elevate your digital presence and grow your business.",
+    "most_popular": "Most Popular",
+    "get_started": "Get Started",
+    "support_title": "Ongoing Support & Growth",
+    "support_description": "Keep your website secure, updated, and performing at its best with our monthly maintenance service.",
+    "support_item1_title": "Website Maintenance",
+    "support_item1_description": "Regular updates and security patches",
+    "support_item2_title": "Performance Monitoring",
+    "support_item2_description": "Monthly reports and optimizations",
+    "support_item3_title": "Priority Support",
+    "support_item3_description": "Quick response for any issues",
+    "learn_more_support": "Learn More About Support"
+  },
+  "services": {
+    "starter_site": {
+      "name": "Starter Site",
+      "tagline": "Perfect for small businesses",
+      "ideal_for": "Small businesses, startups, personal brands",
+      "features": [
+        "Custom responsive design",
+        "Up to 5 pages",
+        "Basic SEO optimization",
+        "Contact form integration",
+        "Mobile-friendly design",
+        "3 months free hosting",
+        "Basic analytics setup"
+      ]
+    },
+    "business_pro": {
+      "name": "Business Pro",
+      "tagline": "Most popular choice",
+      "ideal_for": "Medium businesses, agencies, consultants",
+      "features": [
+        "Premium custom design",
+        "Up to 15 pages",
+        "Advanced SEO optimization",
+        "Content management system",
+        "Blog functionality",
+        "Social media integration",
+        "6 months free hosting",
+        "Advanced analytics",
+        "Live chat integration"
+      ]
+    },
+    "e_commerce": {
+      "name": "E-Commerce",
+      "tagline": "Complete online store",
+      "ideal_for": "Product businesses, online retailers",
+      "features": [
+        "Custom e-commerce design",
+        "Unlimited products",
+        "Secure payment processing",
+        "Inventory management",
+        "Order management system",
+        "Customer accounts",
+        "Email marketing integration",
+        "Advanced analytics",
+        "12 months free hosting",
+        "Ongoing support"
+      ]
+    }
+  },
+  "portfolio_section": {
+    "title_part1": "Our Recent ",
+    "title_part2": "Projects",
+    "description": "Explore our portfolio of successful projects. Each website is crafted with precision, designed for performance, and built to convert visitors into customers."
+  },
+  "projects": {
+    "physiosteo_montagna": {
+      "title": "Physiosteo Montagna",
+      "description": "A modern and professional website for a physiotherapy and osteopathy practice. The site clearly presents their services, team, and philosophy, with a focus on personalized and holistic treatment. It's designed to be welcoming and informative for new and existing patients.",
+      "category": "Redesign & Web Development"
+    },
+    "personal_portfolio": {
+      "title": "Personal Portfolio Website",
+      "description": "A sleek and personal portfolio for a software engineer. It showcases his skills, experience, and a variety of projects in a clean and organized manner. The site acts as a digital resume and a testament to his passion for technology.",
+      "category": "Web Design"
+    }
+  },
+  "about_section": {
+    "title_part1": "Meet the ",
+    "title_part2": "Founders",
+    "description": "Two passionate tech entrepreneurs on a mission to help businesses thrive in the digital world.",
+    "why_title": "Why We Started Digilevate",
+    "why_description1": "We believe every business deserves a stunning digital presence. After years of working with companies that struggled with outdated websites and poor online visibility, we founded Digilevate to bridge that gap.",
+    "why_description2": "Our passion lies in combining cutting-edge technology with beautiful design to create websites that not only look incredible but drive real business results. We're not just building websites – we're building digital experiences that elevate brands.",
+    "list_item1": "15+ years combined experience in web development and IT",
+    "list_item2": "Experts in modern web technologies and design trends",
+    "list_item3": "Committed to delivering exceptional results",
+    "start_project": "Start Your Project With Us"
+  },
+  "founder_profile": {
+    "loris_role": "Co-Founder & Lead Developer",
+    "loris_job_title": "GOOGLE - Software Engineering Apprentice, 3rd Year",
+    "loris_description": "Full-stack developer with expertise in React, Node.js, and modern web technologies. Passionate about creating scalable, performant web applications.",
+    "alessio_role": "Co-Founder & Creative Director",
+    "alessio_job_title": "SWISSCOM - Software Engineering Apprentice, 3rd Year",
+    "alessio_description": "UI/UX designer and creative strategist with an eye for detail and user experience. Specializes in creating beautiful, conversion-focused designs.",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "testimonials_section": {
+    "title_part1": "What Our ",
+    "title_part2": "Clients",
+    "title_part3": " Say",
+    "description": "Don't just take our word for it. Here's what our clients have to say about working with Digilevate.",
+    "projects_completed": "Projects Completed",
+    "client_satisfaction": "Client Satisfaction",
+    "happy_clients": "Happy Clients",
+    "average_rating": "Average Rating"
+  },
+  "testimonials": {
+    "sarah_johnson": {
+      "name": "Sarah Johnson",
+      "company": "TechStart Inc.",
+      "role": "CEO",
+      "content": "Digilevate transformed our online presence completely. Our new website not only looks stunning but has increased our leads by 300%. Their attention to detail and professional approach is unmatched."
+    },
+    "michael_chen": {
+      "name": "Michael Chen",
+      "company": "GrowthLab",
+      "role": "Marketing Director",
+      "content": "Working with Loris and Alessio was a game-changer. They didn't just build us a website – they created a powerful marketing tool that converts visitors into customers. Highly recommended!"
+    },
+    "emily_rodriguez": {
+      "name": "Emily Rodriguez",
+      "company": "Boutique Creative",
+      "role": "Founder",
+      "content": "The team at Digilevate exceeded our expectations. They understood our vision perfectly and delivered a website that truly represents our brand. The ongoing support has been exceptional."
+    }
+  },
+  "contact_section": {
+    "thank_you_title": "Thank You for Your Inquiry!",
+    "thank_you_message": "We've received your message and will get back to you within 24 hours.",
+    "send_another_message": "Send Another Message",
+    "title_part1": "Ready to ",
+    "title_part2": "Elevate",
+    "title_part3": " Your Brand?",
+    "description": "Let's discuss your project and create something amazing together. Get your free consultation and detailed proposal today.",
+    "honeypot_label": "Don’t fill this out:",
+    "sending": "Sending...",
+    "send_inquiry": "Send Your Inquiry",
+    "js_disabled_message": "JavaScript is disabled; submitting will redirect to the success page.",
+    "error_message": "Something went wrong sending your message. Please try again.",
+    "full_name_label": "Full Name *",
+    "full_name_placeholder": "Your full name",
+    "email_label": "Email Address *",
+    "email_placeholder": "your@email.com",
+    "company_label": "Company",
+    "company_placeholder": "Your company name",
+    "phone_label": "Phone",
+    "phone_placeholder": "Your phone number",
+    "desired_timeline_label": "Desired Timeline",
+    "desired_timeline_placeholder": "e.g., 2-3 months, ASAP, flexible",
+    "project_details_label": "Project Details *",
+    "project_details_placeholder": "Tell us about your project, goals, and any specific requirements...",
+    "project_type_label": "Project Type",
+    "project_type_new_website": "New Website",
+    "project_type_website_redesign": "Website Redesign",
+    "project_type_ecommerce_store": "E-commerce Store",
+    "project_type_website_maintenance": "Website Maintenance",
+    "project_type_other": "Other",
+    "budget_range_label": "Budget Range",
+    "budget_range_under_4500": "Under CHF 4,500",
+    "budget_range_4500_9000": "CHF 4,500 - CHF 9,000",
+    "budget_range_9000_22000": "CHF 9,000 - CHF 22,000",
+    "budget_range_22000_plus": "CHF 22,000+",
+    "budget_range_not_sure": "Not sure yet",
+    "select_an_option": "Select an option",
+    "get_in_touch": "Get in Touch",
+    "email_us": "Email Us",
+    "call_us": "Call Us",
+    "available_for_consultation": "Available for consultation calls",
+    "location": "Location",
+    "remote_first_team": "Remote-first team, serving clients worldwide",
+    "why_choose_digilevate": "Why Choose Digilevate?  ",
+    "free_consultation": "Free consultation & proposal",
+    "fast_response_time": "Fast 24-hour response time",
+    "transparent_pricing": "Transparent pricing",
+    "ongoing_support_included": "Ongoing support included"
+  },
+  "footer": {
+    "description": "Elevating your digital presence through beautiful design and robust technology.",
+    "navigate": "Navigate",
+    "contact": "Contact",
+    "location": "Zurich, Switzerland",
+    "all_rights_reserved": "All rights reserved."
+  }
+}

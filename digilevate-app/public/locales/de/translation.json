@@ -1,0 +1,211 @@
+{
+  "hero": {
+    "trusted_by": "Von 20+ Unternehmen vertraut",
+    "title_part1": "Wir erstellen Websites, die Ihr Unternehmen ",
+    "title_part2": "voranbringen",
+    "title_part3": "",
+    "description": "Atemberaubendes Design, leistungsstarke Performance und messbare Ergebnisse. Wir sind Digilevate, Ihre Partner für digitales Wachstum und Online-Erfolg.",
+    "get_quote": "Holen Sie sich Ihr kostenloses Angebot",
+    "view_work": "Unsere Arbeiten ansehen"
+  },
+  "header": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "our_work": "Unsere Arbeit",
+    "about_us": "Über uns",
+    "contact": "Kontakt",
+    "get_free_quote": "Kostenloses Angebot einholen"
+  },
+  "services_section": {
+    "title_part1": "Finden Sie den perfekten ",
+    "title_part2": "Plan",
+    "title_part3": " für Sie",
+    "description": "Von beeindruckenden Starter-Websites bis hin zu umfassenden E-Commerce-Lösungen bieten wir das perfekte Paket, um Ihre digitale Präsenz zu steigern und Ihr Geschäft auszubauen.",
+    "most_popular": "Am beliebtesten",
+    "get_started": "Jetzt starten",
+    "support_title": "Laufender Support & Wachstum",
+    "support_description": "Halten Sie Ihre Website sicher, aktuell und leistungsfähig mit unserem monatlichen Wartungsservice.",
+    "support_item1_title": "Website-Wartung",
+    "support_item1_description": "Regelmäßige Updates und Sicherheitspatches",
+    "support_item2_title": "Leistungsüberwachung",
+    "support_item2_description": "Monatliche Berichte und Optimierungen",
+    "support_item3_title": "Priorisierter Support",
+    "support_item3_description": "Schnelle Reaktion bei Problemen",
+    "learn_more_support": "Mehr über Support erfahren"
+  },
+  "services": {
+    "starter_site": {
+      "name": "Starter-Website",
+      "tagline": "Perfekt für kleine Unternehmen",
+      "ideal_for": "Kleine Unternehmen, Startups, persönliche Marken",
+      "features": [
+        "Individuelles responsives Design",
+        "Bis zu 5 Seiten",
+        "Grundlegende SEO-Optimierung",
+        "Kontaktformular-Integration",
+        "Mobilfreundliches Design",
+        "3 Monate kostenloses Hosting",
+        "Grundlegende Analyse-Einrichtung"
+      ]
+    },
+    "business_pro": {
+      "name": "Business Pro",
+      "tagline": "Beliebteste Wahl",
+      "ideal_for": "Mittlere Unternehmen, Agenturen, Berater",
+      "features": [
+        "Premium individuelles Design",
+        "Bis zu 15 Seiten",
+        "Erweiterte SEO-Optimierung",
+        "Content-Management-System",
+        "Blog-Funktionalität",
+        "Social-Media-Integration",
+        "6 Monate kostenloses Hosting",
+        "Erweiterte Analysen",
+        "Live-Chat-Integration"
+      ]
+    },
+    "e_commerce": {
+      "name": "E-Commerce",
+      "tagline": "Kompletter Online-Shop",
+      "ideal_for": "Produktunternehmen, Online-Händler",
+      "features": [
+        "Individuelles E-Commerce-Design",
+        "Unbegrenzte Produkte",
+        "Sichere Zahlungsabwicklung",
+        "Bestandsverwaltung",
+        "Auftragsverwaltungssystem",
+        "Kundenkonten",
+        "E-Mail-Marketing-Integration",
+        "Erweiterte Analysen",
+        "12 Monate kostenloses Hosting",
+        "Laufender Support"
+      ]
+    }
+  },
+  "portfolio_section": {
+    "title_part1": "Unsere aktuellen ",
+    "title_part2": "Projekte",
+    "description": "Entdecken Sie unser Portfolio erfolgreicher Projekte. Jede Website wird präzise gefertigt, auf Leistung ausgelegt und darauf ausgelegt, Besucher in Kunden umzuwandeln."
+  },
+  "projects": {
+    "physiosteo_montagna": {
+      "title": "Physiosteo Montagna",
+      "description": "Eine moderne und professionelle Website für eine Physiotherapie- und Osteopathiepraxis. Die Website präsentiert klar ihre Dienstleistungen, ihr Team und ihre Philosophie, mit einem Fokus auf personalisierte und ganzheitliche Behandlung. Sie ist so konzipiert, dass sie neue und bestehende Patienten willkommen heißt und informiert.",
+      "category": "Redesign & Webentwicklung"
+    },
+    "personal_portfolio": {
+      "title": "Persönliches Portfolio-Website",
+      "description": "Ein elegantes und persönliches Portfolio für einen Softwareentwickler. Es präsentiert seine Fähigkeiten, Erfahrungen und eine Vielzahl von Projekten auf saubere und organisierte Weise. Die Website dient als digitaler Lebenslauf und als Beweis seiner Leidenschaft für Technologie.",
+      "category": "Webdesign"
+    }
+  },
+  "about_section": {
+    "title_part1": "Lernen Sie die ",
+    "title_part2": "Gründer",
+    "description": "Zwei leidenschaftliche Tech-Unternehmer mit der Mission, Unternehmen in der digitalen Welt zum Erfolg zu verhelfen.",
+    "why_title": "Warum wir Digilevate gegründet haben",
+    "why_description1": "Wir glauben, dass jedes Unternehmen eine beeindruckende digitale Präsenz verdient. Nach Jahren der Zusammenarbeit mit Unternehmen, die mit veralteten Websites und schlechter Online-Sichtbarkeit zu kämpfen hatten, gründeten wir Digilevate, um diese Lücke zu schließen.",
+    "why_description2": "Unsere Leidenschaft liegt darin, modernste Technologie mit schönem Design zu verbinden, um Websites zu erstellen, die nicht nur unglaublich aussehen, sondern auch echte Geschäftsergebnisse liefern. Wir bauen nicht nur Websites – wir schaffen digitale Erlebnisse, die Marken aufwerten.",
+    "list_item1": "Über 15 Jahre kombinierte Erfahrung in Webentwicklung und IT",
+    "list_item2": "Experten für moderne Webtechnologien und Designtrends",
+    "list_item3": "Engagiert für außergewöhnliche Ergebnisse",
+    "start_project": "Starten Sie Ihr Projekt mit uns"
+  },
+  "founder_profile": {
+    "loris_role": "Mitbegründer & Lead Developer",
+    "loris_job_title": "GOOGLE - Software Engineering Apprentice, 3. Jahr",
+    "loris_description": "Full-Stack-Entwickler mit Expertise in React, Node.js und modernen Webtechnologien. Leidenschaftlich daran interessiert, skalierbare, performante Webanwendungen zu erstellen.",
+    "alessio_role": "Mitbegründer & Creative Director",
+    "alessio_job_title": "SWISSCOM - Software Engineering Apprentice, 3. Jahr",
+    "alessio_description": "UI/UX-Designer und kreativer Stratege mit einem Auge für Details und Benutzererfahrung. Spezialisiert auf die Erstellung schöner, konversionsorientierter Designs.",
+    "linkedin": "LinkedIn",
+    "email": "E-Mail"
+  },
+  "testimonials_section": {
+    "title_part1": "Was unsere ",
+    "title_part2": "Kunden",
+    "title_part3": " sagen",
+    "description": "Verlassen Sie sich nicht nur auf unser Wort. Hier erfahren Sie, was unsere Kunden über die Zusammenarbeit mit Digilevate zu sagen haben.",
+    "projects_completed": "Abgeschlossene Projekte",
+    "client_satisfaction": "Kundenzufriedenheit",
+    "happy_clients": "Zufriedene Kunden",
+    "average_rating": "Durchschnittliche Bewertung"
+  },
+  "testimonials": {
+    "sarah_johnson": {
+      "name": "Sarah Johnson",
+      "company": "TechStart Inc.",
+      "role": "CEO",
+      "content": "Digilevate hat unsere Online-Präsenz komplett verändert. Unsere neue Website sieht nicht nur umwerfend aus, sondern hat unsere Leads um 300% gesteigert. Ihre Liebe zum Detail und ihr professioneller Ansatz sind unübertroffen."
+    },
+    "michael_chen": {
+      "name": "Michael Chen",
+      "company": "GrowthLab",
+      "role": "Marketing Director",
+      "content": "Die Zusammenarbeit mit Loris und Alessio war ein Wendepunkt. Sie haben uns nicht nur eine Website gebaut – sie haben ein leistungsstarkes Marketinginstrument geschaffen, das Besucher in Kunden umwandelt. Sehr empfehlenswert!"
+    },
+    "emily_rodriguez": {
+      "name": "Emily Rodriguez",
+      "company": "Boutique Creative",
+      "role": "Gründerin",
+      "content": "Das Team von Digilevate hat unsere Erwartungen übertroffen. Sie haben unsere Vision perfekt verstanden und eine Website geliefert, die unsere Marke wirklich repräsentiert. Der fortlaufende Support war außergewöhnlich."
+    }
+  },
+  "contact_section": {
+    "thank_you_title": "Vielen Dank für Ihre Anfrage!",
+    "thank_you_message": "Wir haben Ihre Nachricht erhalten und werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+    "send_another_message": "Eine weitere Nachricht senden",
+    "title_part1": "Bereit, Ihre Marke zu ",
+    "title_part2": "stärken",
+    "title_part3": "?",
+    "description": "Lassen Sie uns Ihr Projekt besprechen und gemeinsam etwas Großartiges schaffen. Holen Sie sich noch heute Ihre kostenlose Beratung und ein detailliertes Angebot.",
+    "honeypot_label": "Bitte nicht ausfüllen:",
+    "sending": "Senden...",
+    "send_inquiry": "Ihre Anfrage senden",
+    "js_disabled_message": "JavaScript ist deaktiviert; die Übermittlung leitet zur Erfolgsseite weiter.",
+    "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "full_name_label": "Vollständiger Name *",
+    "full_name_placeholder": "Ihr vollständiger Name",
+    "email_label": "E-Mail-Adresse *",
+    "email_placeholder": "ihre@email.com",
+    "company_label": "Unternehmen",
+    "company_placeholder": "Ihr Firmenname",
+    "phone_label": "Telefon",
+    "phone_placeholder": "Ihre Telefonnummer",
+    "desired_timeline_label": "Gewünschter Zeitrahmen",
+    "desired_timeline_placeholder": "z.B. 2-3 Monate, so schnell wie möglich, flexibel",
+    "project_details_label": "Projektdetails *",
+    "project_details_placeholder": "Erzählen Sie uns von Ihrem Projekt, Ihren Zielen und spezifischen Anforderungen...",
+    "project_type_label": "Projekttyp",
+    "project_type_new_website": "Neue Website",
+    "project_type_website_redesign": "Website-Redesign",
+    "project_type_ecommerce_store": "E-Commerce-Shop",
+    "project_type_website_maintenance": "Website-Wartung",
+    "project_type_other": "Sonstiges",
+    "budget_range_label": "Budgetrahmen",
+    "budget_range_under_4500": "Unter CHF 4.500",
+    "budget_range_4500_9000": "CHF 4.500 - CHF 9.000",
+    "budget_range_9000_22000": "CHF 9.000 - CHF 22.000",
+    "budget_range_22000_plus": "CHF 22.000+",
+    "budget_range_not_sure": "Noch nicht sicher",
+    "select_an_option": "Option auswählen",
+    "get_in_touch": "Kontakt aufnehmen",
+    "email_us": "Senden Sie uns eine E-Mail",
+    "call_us": "Rufen Sie uns an",
+    "available_for_consultation": "Verfügbar für Beratungsgespräche",
+    "location": "Standort",
+    "remote_first_team": "Remote-First-Team, betreut Kunden weltweit",
+    "why_choose_digilevate": "Warum Digilevate wählen?",
+    "free_consultation": "Kostenlose Beratung & Angebot",
+    "fast_response_time": "Schnelle Antwortzeit von 24 Stunden",
+    "transparent_pricing": "Transparente Preise",
+    "ongoing_support_included": "Laufender Support inklusive"
+  },
+  "footer": {
+    "description": "Wir steigern Ihre digitale Präsenz durch schönes Design und robuste Technologie.",
+    "navigate": "Navigation",
+    "contact": "Kontakt",
+    "location": "Zürich, Schweiz",
+    "all_rights_reserved": "Alle Rechte vorbehalten."
+  }
+}

@@ -1,31 +1,33 @@
 import React from 'react';
 import { Project } from '../types';
 import { ExternalLink } from 'lucide-react';
-
-const placeholderProject1: Project = {
-    id: 1,
-    title: "Physiosteo Montagna",
-    description: "A modern and professional website for a physiotherapy and osteopathy practice. The site clearly presents their services, team, and philosophy, with a focus on personalized and holistic treatment. It's designed to be welcoming and informative for new and existing patients.",
-    image_url: "/physiosteo-montagna.jpg",
-    live_url: "https://www.physiosteomontagna.ch/",
-    client_name: "Physiosteo Montagna",
-    category: "Redesign & Web Development", 
-    technologies: ["Wix", "Figma", "OVH"],
-};
-
-const placeholderProject2: Project = {
-    id: 2,
-    title: "Personal Portfolio Website",
-    description: "A sleek and personal portfolio for a software engineer. It showcases his skills, experience, and a variety of projects in a clean and organized manner. The site acts as a digital resume and a testament to his passion for technology.",
-    image_url: "/alessio-fano.png",
-    live_url: "https://alessiofano.ch/",
-    client_name: "Alessio Fano",
-    category: "Web Design",
-    technologies: ["Figma", "Next.js", "Vercel"],
-};
-
+import { useTranslation } from 'react-i18next';
 
 const PortfolioSection: React.FC = () => {
+    const { t } = useTranslation();
+
+    const placeholderProject1: Project = {
+        id: 1,
+        title: t('projects.physiosteo_montagna.title'),
+        description: t('projects.physiosteo_montagna.description'),
+        image_url: "/physiosteo-montagna.jpg",
+        live_url: "https://www.physiosteomontagna.ch/",
+        client_name: "Physiosteo Montagna",
+        category: t('projects.physiosteo_montagna.category'), 
+        technologies: ["Wix", "Figma", "OVH"],
+    };
+    
+    const placeholderProject2: Project = {
+        id: 2,
+        title: t('projects.personal_portfolio.title'),
+        description: t('projects.personal_portfolio.description'),
+        image_url: "/alessio-fano.png",
+        live_url: "https://alessiofano.ch/",
+        client_name: "Alessio Fano",
+        category: t('projects.personal_portfolio.category'),
+        technologies: ["Figma", "Next.js", "Vercel"],
+    };
+
     return (
         <section id="work" className="py-24 px-4 sm:py-32 relative">
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
@@ -33,10 +35,10 @@ const PortfolioSection: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                        Our Recent <span className="gradient-text">Projects</span>
+                        {t('portfolio_section.title_part1')} <span className="gradient-text">{t('portfolio_section.title_part2')}</span>
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                        Explore our portfolio of successful projects. Each website is crafted with precision, designed for performance, and built to convert visitors into customers.
+                        {t('portfolio_section.description')}
                     </p>
                 </div>
 

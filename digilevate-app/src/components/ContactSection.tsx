@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Send, CheckCircle, Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -53,7 +55,7 @@ const ContactSection: React.FC = () => {
       });
     } catch (err) {
       console.error(err);
-      alert("Something went wrong sending your message. Please try again.");
+      alert(t('contact_section.error_message'));
     } finally {
       setIsSubmitting(false);
     }
@@ -68,16 +70,16 @@ const ContactSection: React.FC = () => {
               <CheckCircle className="w-10 h-10 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-white mb-4">
-              Thank You for Your Inquiry!
+              {t('contact_section.thank_you_title')}
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              We've received your message and will get back to you within 24 hours.
+              {t('contact_section.thank_you_message')}
             </p>
             <button
               onClick={() => setIsSubmitted(false)}
               className="bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-6 py-3 rounded-lg font-semibold"
             >
-              Send Another Message
+              {t('contact_section.send_another_message')}
             </button>
           </div>
         </div>
@@ -91,11 +93,10 @@ const ContactSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to <span className="gradient-text">Elevate</span> Your Brand?
+            {t('contact_section.title_part1')} <span className="gradient-text">{t('contact_section.title_part2')}</span>{t('contact_section.title_part3')}
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Let's discuss your project and create something amazing together.
-            Get your free consultation and detailed proposal today.
+            {t('contact_section.description')}
           </p>
         </div>
 
@@ -118,7 +119,7 @@ const ContactSection: React.FC = () => {
               {/* Honeypot field (hidden) */}
               <p className="hidden" aria-hidden="true">
                 <label>
-                  Don’t fill this out:
+                  {t('contact_section.honeypot_label')}
                   <input name="bot-field" />
                 </label>
               </p>
@@ -127,21 +128,21 @@ const ContactSection: React.FC = () => {
                 <InputField
                   id="name"
                   name="name"
-                  label="Full Name *"
+                  label={t('contact_section.full_name_label')}
                   type="text"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Your full name"
+                  placeholder={t('contact_section.full_name_placeholder')}
                   required
                 />
                 <InputField
                   id="email"
                   name="email"
-                  label="Email Address *"
+                  label={t('contact_section.email_label')}
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="your@email.com"
+                  placeholder={t('contact_section.email_placeholder')}
                   required
                 />
               </div>
@@ -150,20 +151,20 @@ const ContactSection: React.FC = () => {
                 <InputField
                   id="company"
                   name="company"
-                  label="Company"
+                  label={t('contact_section.company_label')}
                   type="text"
                   value={formData.company}
                   onChange={handleInputChange}
-                  placeholder="Your company name"
+                  placeholder={t('contact_section.company_placeholder')}
                 />
                 <InputField
                   id="phone"
                   name="phone"
-                  label="Phone"
+                  label={t('contact_section.phone_label')}
                   type="tel"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="Your phone number"
+                  placeholder={t('contact_section.phone_placeholder')}
                 />
               </div>
 
@@ -171,41 +172,44 @@ const ContactSection: React.FC = () => {
                 <SelectField
                   id="project_type"
                   name="project_type"
-                  label="Project Type"
+                  label={t('contact_section.project_type_label')}
                   value={formData.project_type}
                   onChange={handleInputChange}
                   options={[
-                    "New Website",
-                    "Website Redesign",
-                    "E-commerce Store",
-                    "Website Maintenance",
-                    "Other",
+                    t('contact_section.project_type_new_website'),
+                    t('contact_section.project_type_website_redesign'),
+                    t('contact_section.project_type_ecommerce_store'),
+                    t('contact_section.project_type_website_maintenance'),
+                    t('contact_section.project_type_other'),
                   ]}
+                  t={t}
                 />
                 <SelectField
                   id="budget"
                   name="budget"
-                  label="Budget Range"
+                  label={t('contact_section.budget_range_label')}
                   value={formData.budget}
                   onChange={handleInputChange}
                   options={[
-                  "Under CHF 4,500",
-                  "CHF 4,500 - CHF 9,000",
-                  "CHF 9,000 - CHF 22,000",
-                  "CHF 22,000+",
-                  "Not sure yet",
-                  ]}                />
+                  t('contact_section.budget_range_under_4500'),
+                  t('contact_section.budget_range_4500_9000'),
+                  t('contact_section.budget_range_9000_22000'),
+                  t('contact_section.budget_range_22000_plus'),
+                  t('contact_section.budget_range_not_sure'),
+                  ]}
+                  t={t}
+                />
               </div>
 
               <div className="mb-6">
                 <InputField
                   id="timeline"
                   name="timeline"
-                  label="Desired Timeline"
+                  label={t('contact_section.desired_timeline_label')}
                   type="text"
                   value={formData.timeline}
                   onChange={handleInputChange}
-                  placeholder="e.g., 2-3 months, ASAP, flexible"
+                  placeholder={t('contact_section.desired_timeline_placeholder')}
                 />
               </div>
 
@@ -213,10 +217,10 @@ const ContactSection: React.FC = () => {
                 <TextareaField
                   id="message"
                   name="message"
-                  label="Project Details *"
+                  label={t('contact_section.project_details_label')}
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us about your project, goals, and any specific requirements..."
+                  placeholder={t('contact_section.project_details_placeholder')}
                   required
                 />
               </div>
@@ -229,11 +233,11 @@ const ContactSection: React.FC = () => {
                 {isSubmitting ? (
                   <>
                     <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                    Sending...
+                    {t('contact_section.sending')}
                   </>
                 ) : (
                   <>
-                    Send Your Inquiry
+                    {t('contact_section.send_inquiry')}
                     <Send className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
@@ -242,7 +246,7 @@ const ContactSection: React.FC = () => {
               {/* No-JS notice (optional) */}
               <noscript>
                 <p className="mt-4 text-gray-400">
-                  JavaScript is disabled; submitting will redirect to the success page.
+                  {t('contact_section.js_disabled_message')}
                 </p>
               </noscript>
             </form>
@@ -253,41 +257,44 @@ const ContactSection: React.FC = () => {
   );
 };
 
-const ContactInfo = () => (
-  <div className="space-y-8">
-    <div className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500">
-      <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
-      <div className="space-y-6">
-        <InfoItem
-          icon={<Mail className="w-6 h-6 text-white" />}
-          title="Email Us"
-          lines={[
-            "info@digilevate.com",
-          ]}
-        />
-        <InfoItem
-          icon={<Phone className="w-6 h-6 text-white" />}
-          title="Call Us"
-          lines={["Available for consultation calls"]}
-        />
-        <InfoItem
-          icon={<MapPin className="w-6 h-6 text-white" />}
-          title="Location"
-          lines={["Remote-first team, serving clients worldwide"]}
-        />
+const ContactInfo = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="space-y-8">
+      <div className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500">
+        <h3 className="text-2xl font-bold text-white mb-6">{t('contact_section.get_in_touch')}</h3>
+        <div className="space-y-6">
+          <InfoItem
+            icon={<Mail className="w-6 h-6 text-white" />}
+            title={t('contact_section.email_us')}
+            lines={[
+              "info@digilevate.com",
+            ]}
+          />
+          <InfoItem
+            icon={<Phone className="w-6 h-6 text-white" />}
+            title={t('contact_section.call_us')}
+            lines={[t('contact_section.available_for_consultation')]}
+          />
+          <InfoItem
+            icon={<MapPin className="w-6 h-6 text-white" />}
+            title={t('contact_section.location')}
+            lines={[t('contact_section.remote_first_team')]}
+          />
+        </div>
+      </div>
+      <div className="glass-effect rounded-2xl p-8">
+        <h4 className="text-white font-semibold mb-4">{t('contact_section.why_choose_digilevate')}</h4>
+        <ul className="space-y-3 text-sm">
+          <WhyItem text={t('contact_section.free_consultation')} />
+          <WhyItem text={t('contact_section.fast_response_time')} />
+          <WhyItem text={t('contact_section.transparent_pricing')} />
+          <WhyItem text={t('contact_section.ongoing_support_included')} />
+        </ul>
       </div>
     </div>
-    <div className="glass-effect rounded-2xl p-8">
-      <h4 className="text-white font-semibold mb-4">Why Choose Digilevate?</h4>
-      <ul className="space-y-3 text-sm">
-        <WhyItem text="Free consultation & proposal" />
-        <WhyItem text="Fast 24-hour response time" />
-        <WhyItem text="Transparent pricing" />
-        <WhyItem text="Ongoing support included" />
-      </ul>
-    </div>
-  </div>
-);
+  );
+};
 
 const InfoItem: React.FC<{ icon: React.ReactNode; title: string; lines: string[] }> = ({
   icon,
@@ -349,8 +356,8 @@ const TextareaField: React.FC<
 );
 
 const SelectField: React.FC<
-  React.SelectHTMLAttributes<HTMLSelectElement> & { label: string; options: string[] }
-> = ({ label, id, options, ...props }) => (
+  React.SelectHTMLAttributes<HTMLSelectElement> & { label: string; options: string[]; t: any }
+> = ({ label, id, options, t, ...props }) => (
   <div className="space-y-2">
     <label htmlFor={id} className="text-white text-sm font-medium">
       {label}
@@ -364,7 +371,7 @@ const SelectField: React.FC<
       }}
     >
       <option value="" disabled>
-        Select an option
+        {t('contact_section.select_an_option')}
       </option>
       {options.map((opt) => (
         <option key={opt} value={opt.toLowerCase().replace(/ /g, "_")} className="bg-[#1d4a5f]">

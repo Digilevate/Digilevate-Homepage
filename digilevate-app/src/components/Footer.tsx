@@ -1,13 +1,15 @@
 import React from 'react';
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
     const navLinks = [
-        { href: "#home", label: "Home" },
-        { href: "#services", label: "Services" },
-        { href: "#work", label: "Our Work" },
-        { href: "#about", label: "About Us" },
-        { href: "#contact", label: "Contact" },
+        { href: "#home", label: t('header.home') },
+        { href: "#services", label: t('header.services') },
+        { href: "#work", label: t('header.our_work') },
+        { href: "#about", label: t('header.about_us') },
+        { href: "#contact", label: t('header.contact') },
     ];
 
     const socialLinks = [
@@ -29,7 +31,7 @@ const Footer: React.FC = () => {
                             />
                         </a>
                         <p className="text-gray-400 mb-4">
-                            Elevating your digital presence through beautiful design and robust technology.
+                            {t('footer.description')}
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((link, index) => (
@@ -42,7 +44,7 @@ const Footer: React.FC = () => {
 
                     <div className="grid grid-cols-2 md:col-span-2 gap-8">
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Navigate</h3>
+                            <h3 className="text-white font-semibold mb-4">{t('footer.navigate')}</h3>
                             <ul className="space-y-2">
                                 {navLinks.map(link => (
                                     <li key={link.href}>
@@ -52,16 +54,16 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Contact</h3>
+                            <h3 className="text-white font-semibold mb-4">{t('footer.contact')}</h3>
                             <div className="space-y-2 text-gray-400">
                                 <p>info@digilevate.com</p>
-                                <p>Zurich, Switzerland</p>
+                                <p>{t('footer.location')}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="mt-8 border-t border-[#2d4a5f] pt-8 text-center text-gray-500">
-                    <p>© {new Date().getFullYear()} Digilevate. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Digilevate. {t('footer.all_rights_reserved')}</p>
                 </div>
             </div>
         </footer>
