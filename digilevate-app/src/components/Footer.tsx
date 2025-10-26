@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     const { t } = useTranslation();
@@ -46,9 +47,9 @@ const Footer: React.FC = () => {
                         <div>
                             <h3 className="text-white font-semibold mb-4">Rechtliches</h3>
                             <ul className="space-y-2">
-                                <li><a href="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
-                                <li><a href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</a></li>
-                                <li><a href="/agb" className="text-gray-400 hover:text-white transition-colors">AGB</a></li>
+                                <li><Link to="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</Link></li>
+                                <li><Link to="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</Link></li>
+                                <li><Link to="/agb" className="text-gray-400 hover:text-white transition-colors">AGB</Link></li>
                             </ul>
                         </div>
                     </div>

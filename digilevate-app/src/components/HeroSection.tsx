@@ -5,7 +5,7 @@ import { ArrowRight, Play, Star } from 'lucide-react';
 const HeroSection: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section id="home" className="py-24 px-4 sm:py-32 lg:py-40 min-h-screen flex items-center relative overflow-hidden">
+        <section id="home" className="py-24 sm:py-32 lg:py-40 min-h-screen flex items-center relative overflow-hidden">
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-[#2d9bf0] rounded-full opacity-10 blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#4db8ff] rounded-full opacity-5 blur-3xl animate-pulse delay-1000"></div>

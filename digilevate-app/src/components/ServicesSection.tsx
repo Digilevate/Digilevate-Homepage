@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 const ServicesSection: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section id="services" className="py-24 px-4 sm:py-32 relative">
+        <section id="services" className="py-24 sm:py-32 relative">
             <div className="absolute top-20 right-20 w-64 h-64 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

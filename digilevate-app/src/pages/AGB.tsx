@@ -2,7 +2,7 @@ import React from 'react';
 
 const AGB: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a2a38] via-[#1d4a5f] to-[#0a2a38] text-white p-8">
+    <div className="bg-gradient-to-br from-[#0a2a38] via-[#1d4a5f] to-[#0a2a38] text-white p-8">
       <div className="max-w-4xl mx-auto">
         <a href="/" className="text-[#2d9bf0] hover:underline mb-8">&larr; Zurück zur Startseite</a>
         <h1 className="text-4xl font-bold mb-8 gradient-text">Allgemeine Geschäftsbedingungen (AGB)</h1>

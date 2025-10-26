@@ -29,7 +29,7 @@ const PortfolioSection: React.FC = () => {
     };
 
     return (
-        <section id="work" className="py-24 px-4 sm:py-32 relative">
+        <section id="work" className="py-24 sm:py-32 relative">
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

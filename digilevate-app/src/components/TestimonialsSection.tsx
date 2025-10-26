@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 const TestimonialsSection: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section className="py-24 px-4 sm:py-32 relative">
+        <section className="py-24 sm:py-32 relative">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl"></div>
             <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
 
