@@ -191,10 +191,10 @@ const ContactSection: React.FC = () => {
                   value={formData.budget}
                   onChange={handleInputChange}
                   options={[
-                  t('contact_section.budget_range_under_4500'),
-                  t('contact_section.budget_range_4500_9000'),
-                  t('contact_section.budget_range_9000_22000'),
-                  t('contact_section.budget_range_22000_plus'),
+                  t('contact_section.budget_range_under_2000'),
+                  t('contact_section.budget_range_2000_4000'),
+                  t('contact_section.budget_range_4000_6000'),
+                  t('contact_section.budget_range_6000_plus'),
                   t('contact_section.budget_range_not_sure'),
                   ]}
                   t={t}
