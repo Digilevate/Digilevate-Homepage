@@ -69,16 +69,16 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         </div>
         
         <div className="p-6 space-y-4">
-            <div className="flex items-center justify-between">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#2d9bf0] transition-colors">
+            <div className="flex items-center justify-start">
+                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#2d9bf0] transition-colors">
                     {project.title}
                 </h3>
-                <span className="bg-[#2d9bf0]/20 text-[#2d9bf0] border border-[#2d9bf0]/30 px-2 py-1 rounded-md text-xs font-semibold flex-shrink-0">
+                <span className="bg-[#2d9bf0]/20 text-[#2d9bf0] border border-[#2d9bf0]/30 px-1 py-0.5 text-[10px] sm:px-2 sm:py-1 sm:text-xs font-semibold flex-shrink-0 rounded-md ml-4">
                     {project.category}
                 </span>
             </div>
             
-            <p className="text-gray-400 text-sm leading-relaxed h-20">
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed min-h-[8rem]">
                 {project.description}
             </p>
             
