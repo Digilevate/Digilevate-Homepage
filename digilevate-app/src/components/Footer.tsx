@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
@@ -10,12 +9,6 @@ const Footer: React.FC = () => {
         { href: "#work", label: t('header.our_work') },
         { href: "#about", label: t('header.about_us') },
         { href: "#contact", label: t('header.contact') },
-    ];
-
-    const socialLinks = [
-        { href: "#", icon: <Twitter className="w-5 h-5" /> },
-        { href: "#", icon: <Linkedin className="w-5 h-5" /> },
-        { href: "#", icon: <Github className="w-5 h-5" /> },
     ];
 
     return (
@@ -33,13 +26,6 @@ const Footer: React.FC = () => {
                         <p className="text-gray-400 mb-4">
                             {t('footer.description')}
                         </p>
-                        <div className="flex space-x-4">
-                            {socialLinks.map((link, index) => (
-                                <a key={index} href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                                    {link.icon}
-                                </a>
-                            ))}
-                        </div>
                     </div>
 
                     <div className="grid grid-cols-2 md:col-span-2 gap-8">
@@ -56,7 +42,7 @@ const Footer: React.FC = () => {
                         <div>
                             <h3 className="text-white font-semibold mb-4">{t('footer.contact')}</h3>
                             <div className="space-y-2 text-gray-400">
-                                <p>info@digilevate.com</p>
+                                <p><a href="mailto:info@digilevate.com" className="hover:text-white transition-colors">info@digilevate.com</a></p>
                                 <p>{t('footer.location')}</p>
                             </div>
                         </div>
