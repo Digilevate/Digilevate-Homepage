@@ -289,7 +289,6 @@ const ContactInfo = () => {
           <WhyItem text={t('contact_section.free_consultation')} />
           <WhyItem text={t('contact_section.fast_response_time')} />
           <WhyItem text={t('contact_section.transparent_pricing')} />
-          <WhyItem text={t('contact_section.ongoing_support_included')} />
         </ul>
       </div>
     </div>
