@@ -39,19 +39,16 @@ export const SERVICES: Service[] = [
         id: 3,
         name: "E-Commerce",
         tagline: "Complete online store",
-        price_from: 7649, // Example value in CHF
+        price_from: 6949, // Example value in CHF
         ideal_for: "Product businesses, online retailers",
         features: [
             "Custom e-commerce design",
             "Unlimited products",
             "Secure payment processing",
-            "Inventory management",
             "Order management system",
-            "Customer accounts",
             "Email marketing integration",
             "Advanced analytics",
-            "12 months free hosting",
-            "Ongoing support",
+            "6 months support and hosting",
         ],
         popular: false,
     },
