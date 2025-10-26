@@ -6,15 +6,14 @@ export const SERVICES: Service[] = [
         id: 1,
         name: "Starter Site",
         tagline: "Perfect for small businesses",
-        price_from: 2449, // Example value in CHF
+        price_from: 1649, // Example value in CHF
         ideal_for: "Small businesses, startups, personal brands",
         features: [
             "Custom responsive design",
-            "Up to 5 pages",
             "Basic SEO optimization",
             "Contact form integration",
             "Mobile-friendly design",
-            "3 months free hosting",
+            "1 month support and hosting",
             "Basic analytics setup",
         ],
         popular: false,
