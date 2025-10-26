@@ -22,16 +22,14 @@ export const SERVICES: Service[] = [
         id: 2,
         name: "Business Pro",
         tagline: "Most popular choice",
-        price_from: 4949, // Example value in CHF
+        price_from: 4249, // Example value in CHF
         ideal_for: "Medium businesses, agencies, consultants",
         features: [
             "Premium custom design",
-            "Up to 15 pages",
             "Advanced SEO optimization",
-            "Content management system",
             "Blog functionality",
             "Social media integration",
-            "6 months free hosting",
+            "3 months support and hosting",
             "Advanced analytics",
             "Live chat integration",
         ],
