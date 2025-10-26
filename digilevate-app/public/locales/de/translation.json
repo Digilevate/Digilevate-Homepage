@@ -131,23 +131,23 @@
     "average_rating": "Durchschnittliche Bewertung"
   },
   "testimonials": {
-    "sarah_johnson": {
-      "name": "Sarah Johnson",
-      "company": "TechStart Inc.",
-      "role": "CEO",
-      "content": "Digilevate hat unsere Online-Präsenz komplett verändert. Unsere neue Website sieht nicht nur umwerfend aus, sondern hat unsere Leads um 300% gesteigert. Ihre Liebe zum Detail und ihr professioneller Ansatz sind unübertroffen."
+    "sandrine_montagna": {
+      "name": "Sandrine Montagna",
+      "company": "Physiosteo Montagna",
+      "role": "Inhaberin",
+      "content": "Exzellenter Service! Der Webmaster ist sehr professionell, aufmerksam und stets ansprechbar. Loris und sein Team haben sich um die komplette Neugestaltung unserer Website gekümmert, die modern, übersichtlich und perfekt auf unsere Bedürfnisse zugeschnitten ist. Die Kommunikation verlief von Anfang bis Ende reibungslos..."
     },
-    "michael_chen": {
-      "name": "Michael Chen",
-      "company": "GrowthLab",
-      "role": "Marketing Director",
-      "content": "Die Zusammenarbeit mit Loris und Alessio war ein Wendepunkt. Sie haben uns nicht nur eine Website gebaut – sie haben ein leistungsstarkes Marketinginstrument geschaffen, das Besucher in Kunden umwandelt. Sehr empfehlenswert!"
+    "ilija_predogac": {
+      "name": "Ilija Predogac",
+      "company": "",
+      "role": "Kunde",
+      "content": "Sehr professionelles und elegantes Team und vorallem Loris hat mich mit seiner Beratung sehr überzeugt. Er konnte mir genau sagen was ich brauchte und was nötig ist um meine Website zu verbessern. Würde immer wieder mit Ihnen zusammenarbeiten."
     },
-    "emily_rodriguez": {
-      "name": "Emily Rodriguez",
-      "company": "Boutique Creative",
-      "role": "Gründerin",
-      "content": "Das Team von Digilevate hat unsere Erwartungen übertroffen. Sie haben unsere Vision perfekt verstanden und eine Website geliefert, die unsere Marke wirklich repräsentiert. Der fortlaufende Support war außergewöhnlich."
+    "juliana_jevtic": {
+      "name": "Juliana Jevtic",
+      "company": "",
+      "role": "Kundin",
+      "content": "Ich finde das Preis-Leistungs Verhältnis super. Auch konnten sie meine komplexere Anliegen kompetent umsetzten und mir zusätzliche Varianten anbieten an die ich selbst nicht gedacht hatte. Sehr empfehlenswert und würde bei weiteren Projekten diese Jungs wieder in betracht ziehen. Gute Arbeit!"
     }
   },
   "contact_section": {

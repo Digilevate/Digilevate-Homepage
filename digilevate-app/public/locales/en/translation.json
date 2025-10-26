@@ -131,23 +131,23 @@
     "average_rating": "Average Rating"
   },
   "testimonials": {
-    "sarah_johnson": {
-      "name": "Sarah Johnson",
-      "company": "TechStart Inc.",
-      "role": "CEO",
-      "content": "Digilevate transformed our online presence completely. Our new website not only looks stunning but has increased our leads by 300%. Their attention to detail and professional approach is unmatched."
+    "sandrine_montagna": {
+      "name": "Sandrine Montagna",
+      "company": "Physiosteo Montagna",
+      "role": "Owner",
+      "content": "Excellent service! The webmaster is very professional, attentive, and always responsive. Loris and his team handled the complete redesign of our website, which is modern, clear, and perfectly tailored to our needs. The communication was smooth and pleasant from start to finish..."
     },
-    "michael_chen": {
-      "name": "Michael Chen",
-      "company": "GrowthLab",
-      "role": "Marketing Director",
-      "content": "Working with Loris and Alessio was a game-changer. They didn't just build us a website – they created a powerful marketing tool that converts visitors into customers. Highly recommended!"
+    "ilija_predogac": {
+      "name": "Ilija Predogac",
+      "company": "",
+      "role": "Client",
+      "content": "Very professional and elegant team and above all, Loris convinced me with his advice. He was able to tell me exactly what I needed and what was necessary to improve my website. Would work with them again and again."
     },
-    "emily_rodriguez": {
-      "name": "Emily Rodriguez",
-      "company": "Boutique Creative",
-      "role": "Founder",
-      "content": "The team at Digilevate exceeded our expectations. They understood our vision perfectly and delivered a website that truly represents our brand. The ongoing support has been exceptional."
+    "juliana_jevtic": {
+      "name": "Juliana Jevtic",
+      "company": "",
+      "role": "Client",
+      "content": "I think the price-performance ratio is great. They were also able to competently implement my more complex requests and offer me additional options that I hadn't thought of myself. Highly recommended and would consider these guys again for future projects. Great work!"
     }
   },
   "contact_section": {

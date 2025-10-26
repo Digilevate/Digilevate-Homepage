@@ -35,14 +35,12 @@ const TestimonialsSection: React.FC = () => {
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
     const { t } = useTranslation();
-    let testimonialKey = '';
-    if (testimonial.name === "Sarah Johnson") {
-        testimonialKey = 'sarah_johnson';
-    } else if (testimonial.name === "Michael Chen") {
-        testimonialKey = 'michael_chen';
-    } else if (testimonial.name === "Emily Rodriguez") {
-        testimonialKey = 'emily_rodriguez';
-    }
+    const testimonialNameMap: { [key: string]: string } = {
+        "Sandrine Montagna": "sandrine_montagna",
+        "Ilija Predogac": "ilija_predogac",
+        "Juliana Jevtic": "juliana_jevtic"
+    };
+    const testimonialKey = testimonialNameMap[testimonial.name];
 
     return (
         <div className="glass-effect rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#2d9bf0]/20 flex flex-col">
@@ -53,14 +51,17 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
                 </p>
 
                 <div className="flex items-center space-x-4 pt-4 border-t border-gray-700">
-                    <img 
-                        src={testimonial.image} 
-                        alt={testimonial.name}
-                        className="w-12 h-12 object-cover rounded-full"
-                    />
+                    <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                        <span className="text-white font-bold text-lg">
+                            {testimonial.name.split(' ').map(n => n[0]).join('')}
+                        </span>
+                    </div>
                     <div>
                         <h4 className="text-white font-bold">{t(`testimonials.${testimonialKey}.name`)}</h4>
-                        <p className="text-gray-400 text-sm">{t(`testimonials.${testimonialKey}.role`)} at {t(`testimonials.${testimonialKey}.company`)}</p>
+                        <p className="text-gray-400 text-sm">
+                            {t(`testimonials.${testimonialKey}.role`)}
+                            {t(`testimonials.${testimonialKey}.company`) && ` at ${t(`testimonials.${testimonialKey}.company`)}`}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -73,10 +74,10 @@ const Stats: React.FC = () => {
     return (
         <div className="text-center mt-24">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-                <StatItem value="50+" label={t('testimonials_section.projects_completed')} />
-                <StatItem value="98%" label={t('testimonials_section.client_satisfaction')} />
-                <StatItem value="20+" label={t('testimonials_section.happy_clients')} />
-                <StatItem value="4.9" label={t('testimonials_section.average_rating')} />
+                <StatItem value="20+" label={t('testimonials_section.projects_completed')} />
+                <StatItem value="100%" label={t('testimonials_section.client_satisfaction')} />
+                <StatItem value="10+" label={t('testimonials_section.happy_clients')} />
+                <StatItem value="5.0" label={t('testimonials_section.average_rating')} />
             </div>
         </div>
     );

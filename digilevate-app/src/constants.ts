@@ -122,27 +122,27 @@ export const PROJECTS: Project[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
     {
-        name: "Sarah Johnson",
-        company: "TechStart Inc.",
-        role: "CEO",
-        content: "Digilevate transformed our online presence completely. Our new website not only looks stunning but has increased our leads by 300%. Their attention to detail and professional approach is unmatched.",
+        name: "Sandrine Montagna",
+        company: "Physiosteo Montagna",
+        role: "Inhaberin",
+        content: "Exzellenter Service! Der Webmaster ist sehr professionell, aufmerksam und stets ansprechbar. Loris und sein Team haben sich um die komplette Neugestaltung unserer Website gekümmert, die modern, übersichtlich und perfekt auf unsere Bedürfnisse zugeschnitten ist. Die Kommunikation verlief von Anfang bis Ende reibungslos...",
         rating: 5,
-        image: "https://picsum.photos/seed/person1/100/100"
+        image: "https://picsum.photos/seed/person4/100/100"
     },
     {
-        name: "Michael Chen",
-        company: "GrowthLab",
-        role: "Marketing Director",
-        content: "Working with Loris and Alessio was a game-changer. They didn't just build us a website – they created a powerful marketing tool that converts visitors into customers. Highly recommended!",
+        name: "Ilija Predogac",
+        company: "",
+        role: "Kunde",
+        content: "Sehr professionelles und elegantes Team und vorallem Loris hat mich mit seiner Beratung sehr überzeugt. Er konnte mir genau sagen was ich brauchte und was nötig ist um meine Website zu verbessern. Würde immer wieder mit Ihnen zusammenarbeiten.",
         rating: 5,
-        image: "https://picsum.photos/seed/person2/100/100"
+        image: "https://picsum.photos/seed/person5/100/100"
     },
     {
-        name: "Emily Rodriguez",
-        company: "Boutique Creative",
-        role: "Founder",
-        content: "The team at Digilevate exceeded our expectations. They understood our vision perfectly and delivered a website that truly represents our brand. The ongoing support has been exceptional.",
+        name: "Juliana Jevtic",
+        company: "",
+        role: "Kundin",
+        content: "Ich finde das Preis-Leistungs Verhältnis super. Auch konnten sie meine komplexere Anliegen kompetent umsetzten und mir zusätzliche Varianten anbieten an die ich selbst nicht gedacht hatte. Sehr empfehlenswert und würde bei weiteren Projekten diese Jungs wieder in betracht ziehen. Gute Arbeit!",
         rating: 5,
-        image: "https://picsum.photos/seed/person3/100/100"
+        image: "https://picsum.photos/seed/person6/100/100"
     }
 ];
