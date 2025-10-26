@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                        {t('about_section.title_part1')} <span className="gradient-text">{t('about_section.title_part2')}</span>
+                        {t('about_section.title_part1')} <span className="gradient-text">{t('about_section.title_part2')}</span>{t('about_section.title_part3')}
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
                         {t('about_section.description')}
