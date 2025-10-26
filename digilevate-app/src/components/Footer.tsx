@@ -26,6 +26,10 @@ const Footer: React.FC = () => {
                         <p className="text-gray-400 mb-4">
                             {t('footer.description')}
                         </p>
+                        <div className="space-y-2 text-gray-400">
+                            <p><a href="mailto:info@digilevate.com" className="hover:text-white transition-colors">info@digilevate.com</a></p>
+                            <p>{t('footer.location')}</p>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-2 md:col-span-2 gap-8">
@@ -40,11 +44,12 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">{t('footer.contact')}</h3>
-                            <div className="space-y-2 text-gray-400">
-                                <p><a href="mailto:info@digilevate.com" className="hover:text-white transition-colors">info@digilevate.com</a></p>
-                                <p>{t('footer.location')}</p>
-                            </div>
+                            <h3 className="text-white font-semibold mb-4">Rechtliches</h3>
+                            <ul className="space-y-2">
+                                <li><a href="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
+                                <li><a href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</a></li>
+                                <li><a href="/agb" className="text-gray-400 hover:text-white transition-colors">AGB</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
