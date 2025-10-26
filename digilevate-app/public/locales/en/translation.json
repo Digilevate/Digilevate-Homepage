@@ -20,6 +20,7 @@
     "title_part1": "Find the Perfect ",
     "title_part2": "Plan",
     "title_part3": " for You",
+    "from": "from",
     "description": "From stunning starter sites to full e-commerce solutions, we have the perfect package to elevate your digital presence and grow your business.",
     "most_popular": "Most Popular",
     "get_started": "Get Started",
@@ -40,11 +41,10 @@
       "ideal_for": "Small businesses, startups, personal brands",
       "features": [
         "Custom responsive design",
-        "Up to 5 pages",
         "Basic SEO optimization",
         "Contact form integration",
         "Mobile-friendly design",
-        "3 months free hosting",
+        "1 month support and hosting",
         "Basic analytics setup"
       ]
     },

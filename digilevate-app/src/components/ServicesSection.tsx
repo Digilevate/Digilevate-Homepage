@@ -47,7 +47,11 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
                 <h3 className="text-2xl font-bold text-white mb-2">{t(`services.${service.id === 1 ? 'starter_site' : service.id === 2 ? 'business_pro' : 'e_commerce'}.name`)}</h3>
                 <p className="text-gray-400 mb-4 h-10">{t(`services.${service.id === 1 ? 'starter_site' : service.id === 2 ? 'business_pro' : 'e_commerce'}.tagline`)}</p>
                 <div className="text-4xl font-bold gradient-text mb-2">
-                    CHF {service.price_from.toLocaleString()}
+                    {service.id === 1 ? (
+                        t('services_section.from') + ` CHF ${service.price_from.toLocaleString('de-CH')}.-`
+                    ) : (
+                        `CHF ${service.price_from.toLocaleString('de-CH')}.-`
+                    )}
                 </div>
                 <p className="text-sm text-gray-400">{t(`services.${service.id === 1 ? 'starter_site' : service.id === 2 ? 'business_pro' : 'e_commerce'}.ideal_for`)}</p>
             </div>

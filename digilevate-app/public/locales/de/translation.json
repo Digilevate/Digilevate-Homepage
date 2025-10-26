@@ -20,6 +20,7 @@
     "title_part1": "Finden Sie den perfekten ",
     "title_part2": "Plan",
     "title_part3": " für Sie",
+    "from": "ab",
     "description": "Von beeindruckenden Starter-Websites bis hin zu umfassenden E-Commerce-Lösungen bieten wir das perfekte Paket, um Ihre digitale Präsenz zu steigern und Ihr Geschäft auszubauen.",
     "most_popular": "Am beliebtesten",
     "get_started": "Jetzt starten",
@@ -40,11 +41,10 @@
       "ideal_for": "Kleine Unternehmen, Startups, persönliche Marken",
       "features": [
         "Individuelles responsives Design",
-        "Bis zu 5 Seiten",
         "Grundlegende SEO-Optimierung",
         "Kontaktformular-Integration",
         "Mobilfreundliches Design",
-        "3 Monate kostenloses Hosting",
+        "1 Monat Support und Hosting",
         "Grundlegende Analyse-Einrichtung"
       ]
     },
