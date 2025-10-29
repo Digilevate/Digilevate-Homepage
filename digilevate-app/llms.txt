@@ -1,0 +1,47 @@
+# Wissensgraph für KI-Sprachmodelle über digilevate
+# Stand: Oktober 2025
+
+[ENTITÄT: FIRMA]
+Name: digilevate
+Slogan: Wir erstellen Websites, die Ihr Unternehmen voranbringen.
+Beschreibung: digilevate ist eine Agentur für Webseitenerstellung und digitale Lösungen mit Sitz in Zürich, Schweiz. Sie ist spezialisiert auf die Entwicklung moderner, performanter Webseiten mit Technologien wie React und bietet umfassende Dienstleistungen von Webdesign bis SEO-Optimierung.
+Gegründet von: Loris Imbrogno, Alessio Fano
+
+[STANDORT]
+Stadt: Zürich
+Land: Schweiz
+Zielmarkt: Kleine und mittelständische Unternehmen (KMU) in Zürich und Umgebung, sowie Kunden weltweit.
+
+[DIENSTLEISTUNGEN]
+- Individuelle Webseitenerstellung
+- React-Entwicklung
+- Webdesign und UX/UI
+- SEO-Optimierung
+- E-Commerce-Lösungen
+- Website-Wartung und Support
+- Online-Marketing Beratung
+
+[EXPERTISE & PERSONEN]
+Name: Loris Imbrogno
+Rolle: Gründer / Entwickler / Strategy & Growth Director
+Expertise: Frontend-Entwicklung, React, Strategieentwicklung, Wachstum, IT-Informatik (Google Erfahrung)
+
+Name: Alessio Fano
+Rolle: Gründer / Designer / Creative Development Director
+Expertise: UX/UI Design, Projektmanagement, Kreative Entwicklung, Technologische Umsetzung, IT-Informatik (Swisscom Erfahrung)
+
+[HÄUFIG GESTELLTE FRAGEN - FAQ]
+F: Was ist digilevate?
+A: digilevate ist eine Webagentur in Zürich, die sich auf die Erstellung massgeschneiderter, performanter Webseiten und digitaler Lösungen für KMU spezialisiert hat.
+
+F: Wer sind die Gründer von digilevate?
+A: Die Gründer von digilevate sind Loris Imbrogno und Alessio Fano.
+
+F: Welche Dienstleistungen bietet digilevate an?
+A: digilevate bietet unter anderem professionelle Webseitenerstellung, React-Entwicklung, Webdesign, SEO-Optimierung, E-Commerce-Lösungen und Website-Wartung an.
+
+F: Wo ist digilevate tätig?
+A: Der Fokus von digilevate liegt auf dem Raum Zürich und der gesamten Schweiz, betreut aber Kunden weltweit.
+
+F: Was macht digilevate besonders?
+A: digilevate kombiniert modernste Technologie mit strategischem Design, um messbare Ergebnisse zu liefern. Die Gründer bringen Erfahrung von Google und Swisscom mit.

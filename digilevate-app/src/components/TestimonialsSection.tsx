@@ -86,7 +86,7 @@ const Stats: React.FC = () => {
 const StatItem: React.FC<{ value: string, label: string }> = ({ value, label }) => (
     <div className="text-center p-4 glass-effect rounded-2xl hover:-translate-y-2 transition-transform duration-300">
         <div className="text-4xl font-bold gradient-text mb-2">{value}</div>
-        <div className="text-gray-400 text-sm">{label}</div>
+        <h4 className="text-gray-400 text-sm">{label}</h4>
     </div>
 );
 
