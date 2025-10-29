@@ -10,7 +10,7 @@ const PortfolioSection: React.FC = () => {
         id: 1,
         title: t('projects.physiosteo_montagna.title'),
         description: t('projects.physiosteo_montagna.description'),
-        image_url: "/physiosteo-montagna.jpg",
+        image_url: "/physiosteo-montagna-webseite-digilevate-zuerich.jpg",
         live_url: "https://www.physiosteomontagna.ch/",
         client_name: "Physiosteo Montagna",
         category: t('projects.physiosteo_montagna.category'), 
@@ -21,7 +21,7 @@ const PortfolioSection: React.FC = () => {
         id: 2,
         title: t('projects.personal_portfolio.title'),
         description: t('projects.personal_portfolio.description'),
-        image_url: "/alessio-fano.png",
+        image_url: "/alessio-fano-digilevate-gruender-zuerich.png",
         live_url: "https://alessiofano.ch/",
         client_name: "Alessio Fano",
         category: t('projects.personal_portfolio.category'),
@@ -29,7 +29,7 @@ const PortfolioSection: React.FC = () => {
     };
 
     return (
-        <section id="work" className="py-24 px-4 sm:py-32 relative">
+        <section id="work" className="py-24 sm:py-32 relative">
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

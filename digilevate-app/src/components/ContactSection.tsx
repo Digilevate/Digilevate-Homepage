@@ -9,9 +9,6 @@ const ContactSection: React.FC = () => {
     email: "",
     company: "",
     phone: "",
-    project_type: "",
-    budget: "",
-    timeline: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -51,7 +48,7 @@ const ContactSection: React.FC = () => {
       setIsSubmitted(true);
       setFormData({
         name: "", email: "", company: "", phone: "",
-        project_type: "", budget: "", timeline: "", message: "",
+        message: "",
       });
     } catch (err) {
       console.error(err);
@@ -63,7 +60,7 @@ const ContactSection: React.FC = () => {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="py-24 px-4 sm:py-32">
+      <section id="contact" className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="glass-effect rounded-2xl p-12 hover-glow">
             <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -88,7 +85,7 @@ const ContactSection: React.FC = () => {
   }
 
   return (
-    <section id="contact" className="py-24 px-4 sm:py-32 relative">
+    <section id="contact" className="py-24 sm:py-32 relative">
       <div className="absolute top-20 right-20 w-96 h-96 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
@@ -165,51 +162,6 @@ const ContactSection: React.FC = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder={t('contact_section.phone_placeholder')}
-                />
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <SelectField
-                  id="project_type"
-                  name="project_type"
-                  label={t('contact_section.project_type_label')}
-                  value={formData.project_type}
-                  onChange={handleInputChange}
-                  options={[
-                    t('contact_section.project_type_new_website'),
-                    t('contact_section.project_type_website_redesign'),
-                    t('contact_section.project_type_ecommerce_store'),
-                    t('contact_section.project_type_website_maintenance'),
-                    t('contact_section.project_type_other'),
-                  ]}
-                  t={t}
-                />
-                <SelectField
-                  id="budget"
-                  name="budget"
-                  label={t('contact_section.budget_range_label')}
-                  value={formData.budget}
-                  onChange={handleInputChange}
-                  options={[
-                  t('contact_section.budget_range_under_2000'),
-                  t('contact_section.budget_range_2000_4000'),
-                  t('contact_section.budget_range_4000_6000'),
-                  t('contact_section.budget_range_6000_plus'),
-                  t('contact_section.budget_range_not_sure'),
-                  ]}
-                  t={t}
-                />
-              </div>
-
-              <div className="mb-6">
-                <InputField
-                  id="timeline"
-                  name="timeline"
-                  label={t('contact_section.desired_timeline_label')}
-                  type="text"
-                  value={formData.timeline}
-                  onChange={handleInputChange}
-                  placeholder={t('contact_section.desired_timeline_placeholder')}
                 />
               </div>
 
@@ -351,33 +303,6 @@ const TextareaField: React.FC<
       {...props}
       className="w-full bg-white/10 border-gray-600 text-white placeholder:text-gray-400 focus:border-[#2d9bf0] focus:ring-[#2d9bf0] rounded-lg p-3"
     />
-  </div>
-);
-
-const SelectField: React.FC<
-  React.SelectHTMLAttributes<HTMLSelectElement> & { label: string; options: string[]; t: any }
-> = ({ label, id, options, t, ...props }) => (
-  <div className="space-y-2">
-    <label htmlFor={id} className="text-white text-sm font-medium">
-      {label}
-    </label>
-    <select
-      id={id}
-      {...props}
-      className="w-full bg-white/10 border-gray-600 text-white focus:border-[#2d9bf0] focus:ring-[#2d9bf0] rounded-lg p-3 appearance-none bg-no-repeat bg-right pr-8"
-      style={{
-        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`,
-      }}
-    >
-      <option value="" disabled>
-        {t('contact_section.select_an_option')}
-      </option>
-      {options.map((opt) => (
-        <option key={opt} value={opt.toLowerCase().replace(/ /g, "_")} className="bg-[#1d4a5f]">
-          {opt}
-        </option>
-      ))}
-    </select>
   </div>
 );
 

@@ -1,9 +1,9 @@
 {
   "hero": {
     "trusted_by": "Von 10+ Unternehmen vertraut",
-    "title_part1": "Wir erstellen Websites, die Ihr Unternehmen ",
-    "title_part2": "voranbringen",
-    "title_part3": "",
+    "title_part1": "Digitale Erlebnisse, die ",
+    "title_part2": "begeistern ",
+    "title_part3": "und Sie zum wachsen bringt",
     "description": "Atemberaubendes Design, leistungsstarke Performance und messbare Ergebnisse. Wir sind Digilevate, Ihre Partner für digitales Wachstum und Online-Erfolg.",
     "get_quote": "Holen Sie sich Ihr kostenloses Angebot",
     "view_work": "Unsere Arbeiten ansehen"
@@ -76,6 +76,19 @@
         "6 Monate Support und Hosting"
       ]
     }
+  },
+  "core_services_section": {
+    "title_part1": "Unsere",
+    "title_part2": "Kernkompetenzen",
+    "description": "Entdecken Sie, wie wir Ihr Unternehmen digital voranbringen.",
+    "service1_title": "Modernes & Nutzerfreundliches Webdesign",
+    "service1_description": "Wir gestalten einzigartige, intuitive Designs, die Ihre Marke perfekt repräsentieren und Besucher in Kunden verwandeln.",
+    "service2_title": "Leistungsstarke Webentwicklung",
+    "service2_description": "Mit modernen Technologien wie React bauen wir schnelle, sichere und skalierbare Webseiten, die auf allen Geräten einwandfrei funktionieren.",
+    "service3_title": "Sichtbarkeit durch SEO",
+    "service3_description": "Wir sorgen dafür, dass Ihre Webseite von potenziellen Kunden in Zürich und Umgebung auf Google gefunden wird – für messbaren Erfolg.",
+    "service4_title": "Zuverlässige Wartung & Support",
+    "service4_description": "Auch nach dem Livegang sind wir für Sie da. Wir halten Ihre Webseite technisch aktuell, sicher und leistungsfähig."
   },
   "portfolio_section": {
     "title_part1": "Unsere aktuellen ",

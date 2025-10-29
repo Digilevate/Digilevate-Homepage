@@ -41,8 +41,8 @@ const Header: React.FC = () => {
                     <a href="#home" className="flex items-center">
                         <div>
                             <img
-                                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
-                                width={150} 
+                                src="/responsive-webdesign-zuerich-digilevate.png"
+                                width={150}
                                 alt="Digilevate Logo"
                             />
                         </div>
@@ -72,27 +72,27 @@ const Header: React.FC = () => {
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
+             </div>
 
-                {isMenuOpen && (
-                    <div className="md:hidden absolute top-16 left-0 right-0 bg-[#0a2a38]/95 backdrop-blur-lg border-b border-[#2d4a5f]">
-                        <nav className="px-4 pt-2 pb-4 space-y-2">
-                            {navLinks.map(link => (
-                                <a key={link.href} href={link.href} onClick={handleLinkClick} className="block text-white hover:text-[#2d9bf0] transition-colors px-2 py-2 rounded-md">{link.label}</a>
-                            ))}
-                            <a href="#contact" onClick={handleLinkClick} className="w-full block text-center bg-[#2d9bf0] hover:bg-[#4db8ff] text-white mt-2 py-2 rounded-lg">
-                                {t('header.get_free_quote')}
-                            </a>
-                            <button
-                                className="w-full flex items-center justify-center px-6 py-2 rounded-lg border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white transition-colors mt-4"
-                                onClick={changeLanguage}
-                            >
-                                <Globe className="w-4 h-4 mr-2" />
-                                {i18n.language === 'en' ? 'DE' : 'EN'}
-                            </button>
-                        </nav>
-                    </div>
-                )}
-            </div>
+            {isMenuOpen && (
+                <div className="md:hidden absolute top-16 w-full bg-[#0a2a38]/95 backdrop-blur-lg border-b border-[#2d4a5f]">
+                    <nav className="px-4 pt-2 pb-4 space-y-2">
+                        {navLinks.map(link => (
+                            <a key={link.href} href={link.href} onClick={handleLinkClick} className="block text-white hover:text-[#2d9bf0] transition-colors px-2 py-2 rounded-md">{link.label}</a>
+                        ))}
+                        <a href="#contact" onClick={handleLinkClick} className="w-full block text-center bg-[#2d9bf0] hover:bg-[#4db8ff] text-white mt-2 py-2 rounded-lg">
+                            {t('header.get_free_quote')}
+                        </a>
+                        <button
+                            className="w-full flex items-center justify-center px-6 py-2 rounded-lg border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white transition-colors mt-4"
+                            onClick={changeLanguage}
+                        >
+                            <Globe className="w-4 h-4 mr-2" />
+                            {i18n.language === 'en' ? 'DE' : 'EN'}
+                        </button>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 };

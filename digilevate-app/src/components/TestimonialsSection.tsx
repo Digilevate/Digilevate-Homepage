@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 const TestimonialsSection: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section className="py-24 px-4 sm:py-32 relative">
+        <section className="py-24 sm:py-32 relative">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#2d9bf0] rounded-full opacity-5 blur-3xl"></div>
             <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#4db8ff] rounded-full opacity-5 blur-3xl"></div>
 
@@ -86,7 +86,7 @@ const Stats: React.FC = () => {
 const StatItem: React.FC<{ value: string, label: string }> = ({ value, label }) => (
     <div className="text-center p-4 glass-effect rounded-2xl hover:-translate-y-2 transition-transform duration-300">
         <div className="text-4xl font-bold gradient-text mb-2">{value}</div>
-        <div className="text-gray-400 text-sm">{label}</div>
+        <h4 className="text-gray-400 text-sm">{label}</h4>
     </div>
 );
 

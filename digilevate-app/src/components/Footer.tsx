@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     const { t } = useTranslation();
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
                     <div className="md:col-span-1">
                         <a href="#home" className="flex items-center mb-4">
                             <img
-                                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
+                                src="/responsive-webdesign-zuerich-digilevate.png"
                                 width={150}
                                 alt="Digilevate Logo"
                             />
@@ -26,6 +27,10 @@ const Footer: React.FC = () => {
                         <p className="text-gray-400 mb-4">
                             {t('footer.description')}
                         </p>
+                        <div className="space-y-2 text-gray-400">
+                            <p><a href="mailto:info@digilevate.com" className="hover:text-white transition-colors">info@digilevate.com</a></p>
+                            <p>{t('footer.location')}</p>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-2 md:col-span-2 gap-8">
@@ -40,11 +45,12 @@ const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">{t('footer.contact')}</h3>
-                            <div className="space-y-2 text-gray-400">
-                                <p><a href="mailto:info@digilevate.com" className="hover:text-white transition-colors">info@digilevate.com</a></p>
-                                <p>{t('footer.location')}</p>
-                            </div>
+                            <h3 className="text-white font-semibold mb-4">Rechtliches</h3>
+                            <ul className="space-y-2">
+                                <li><Link to="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</Link></li>
+                                <li><Link to="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</Link></li>
+                                <li><Link to="/agb" className="text-gray-400 hover:text-white transition-colors">AGB</Link></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
