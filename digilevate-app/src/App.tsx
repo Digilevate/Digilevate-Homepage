@@ -31,25 +31,29 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={
-                    <main className="pt-16">
-                        <Header />
-                        <HeroSection />
-                        <ServicesSection />
-                        <PortfolioSection />
-                        <AboutSection />
-                        <TestimonialsSection />
-                        <ContactSection />
-                        <Footer />
-                    </main>
-                } />
-                <Route path="/agb" element={<AGB />} />
-                <Route path="/datenschutz" element={<Datenschutz />} />
-                <Route path="/impressum" element={<Impressum />} />
-            </Routes>
-        </Router>
+        <div className="min-h-screen bg-gradient-to-br from-[#0a2a38] via-[#1d4a5f] to-[#0a2a38] text-white overflow-hidden">
+            <Router>
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Header />
+                            <main className="pt-16">
+                                <HeroSection />
+                                <ServicesSection />
+                                <PortfolioSection />
+                                <AboutSection />
+                                <TestimonialsSection />
+                                <ContactSection />
+                            </main>
+                            <Footer />
+                        </>
+                    } />
+                    <Route path="/agb" element={<AGB />} />
+                    <Route path="/datenschutz" element={<Datenschutz />} />
+                    <Route path="/impressum" element={<Impressum />} />
+                </Routes>
+            </Router>
+        </div>
     );
 };
 
