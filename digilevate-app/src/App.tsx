@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServicesSection';
+import CoreServicesSection from './components/CoreServicesSection';
 import PortfolioSection from './components/PortfolioSection';
 import AboutSection from './components/AboutSection';
 import TestimonialsSection from './components/TestimonialsSection';
@@ -22,7 +22,7 @@ const MainPage = () => (
         <Header />
         <main className="pt-16">
             <HeroSection />
-            <ServicesSection />
+            <CoreServicesSection />
             <PortfolioSection />
             <AboutSection />
             <TestimonialsSection />

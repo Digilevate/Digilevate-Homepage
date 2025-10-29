@@ -9,9 +9,6 @@ const ContactSection: React.FC = () => {
     email: "",
     company: "",
     phone: "",
-    project_type: "",
-    budget: "",
-    timeline: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -51,7 +48,7 @@ const ContactSection: React.FC = () => {
       setIsSubmitted(true);
       setFormData({
         name: "", email: "", company: "", phone: "",
-        project_type: "", budget: "", timeline: "", message: "",
+        message: "",
       });
     } catch (err) {
       console.error(err);
@@ -165,51 +162,6 @@ const ContactSection: React.FC = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder={t('contact_section.phone_placeholder')}
-                />
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <SelectField
-                  id="project_type"
-                  name="project_type"
-                  label={t('contact_section.project_type_label')}
-                  value={formData.project_type}
-                  onChange={handleInputChange}
-                  options={[
-                    t('contact_section.project_type_new_website'),
-                    t('contact_section.project_type_website_redesign'),
-                    t('contact_section.project_type_ecommerce_store'),
-                    t('contact_section.project_type_website_maintenance'),
-                    t('contact_section.project_type_other'),
-                  ]}
-                  t={t}
-                />
-                <SelectField
-                  id="budget"
-                  name="budget"
-                  label={t('contact_section.budget_range_label')}
-                  value={formData.budget}
-                  onChange={handleInputChange}
-                  options={[
-                  t('contact_section.budget_range_under_4500'),
-                  t('contact_section.budget_range_4500_9000'),
-                  t('contact_section.budget_range_9000_22000'),
-                  t('contact_section.budget_range_22000_plus'),
-                  t('contact_section.budget_range_not_sure'),
-                  ]}
-                  t={t}
-                />
-              </div>
-
-              <div className="mb-6">
-                <InputField
-                  id="timeline"
-                  name="timeline"
-                  label={t('contact_section.desired_timeline_label')}
-                  type="text"
-                  value={formData.timeline}
-                  onChange={handleInputChange}
-                  placeholder={t('contact_section.desired_timeline_placeholder')}
                 />
               </div>
 

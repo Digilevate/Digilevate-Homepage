@@ -77,6 +77,19 @@
       ]
     }
   },
+  "core_services_section": {
+    "title_part1": "Our",
+    "title_part2": "Key Services",
+    "description": "Discover how we advance your business digitally.",
+    "service1_title": "Modern & User-Friendly Web Design",
+    "service1_description": "We create unique, intuitive designs that perfectly represent your brand and convert visitors into customers.",
+    "service2_title": "Powerful Web Development",
+    "service2_description": "With modern technologies like React, we build fast, secure, and scalable websites that function flawlessly on all devices.",
+    "service3_title": "Visibility through SEO",
+    "service3_description": "We ensure your website is found by potential customers in Zurich and the surrounding area on Google – for measurable success.",
+    "service4_title": "Reliable Maintenance & Support",
+    "service4_description": "Even after launch, we are there for you. We keep your website technically up-to-date, secure, and powerful."
+  },
   "portfolio_section": {
     "title_part1": "Our Recent ",
     "title_part2": "Projects",
