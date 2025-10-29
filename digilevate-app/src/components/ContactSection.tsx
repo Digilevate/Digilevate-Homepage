@@ -306,31 +306,4 @@ const TextareaField: React.FC<
   </div>
 );
 
-const SelectField: React.FC<
-  React.SelectHTMLAttributes<HTMLSelectElement> & { label: string; options: string[]; t: any }
-> = ({ label, id, options, t, ...props }) => (
-  <div className="space-y-2">
-    <label htmlFor={id} className="text-white text-sm font-medium">
-      {label}
-    </label>
-    <select
-      id={id}
-      {...props}
-      className="w-full bg-white/10 border-gray-600 text-white focus:border-[#2d9bf0] focus:ring-[#2d9bf0] rounded-lg p-3 appearance-none bg-no-repeat bg-right pr-8"
-      style={{
-        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`,
-      }}
-    >
-      <option value="" disabled>
-        {t('contact_section.select_an_option')}
-      </option>
-      {options.map((opt) => (
-        <option key={opt} value={opt.toLowerCase().replace(/ /g, "_")} className="bg-[#1d4a5f]">
-          {opt}
-        </option>
-      ))}
-    </select>
-  </div>
-);
-
 export default ContactSection;
