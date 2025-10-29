@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                     <a href="#home" className="flex items-center">
                         <div>
                             <img
-                                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
+                                src="/responsive-webdesign-zuerich-digilevate.png"
                                 width={150}
                                 alt="Digilevate Logo"
                             />

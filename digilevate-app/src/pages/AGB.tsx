@@ -5,13 +5,13 @@ const AGB: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>AGB digilevate Webagentur Zürich | Allgemeine Geschäftsbedingungen Webdesign</title>
-        <meta name="description" content="Allgemeine Geschäftsbedingungen (AGB) der digilevate Webagentur Zürich für Webdesign, Entwicklung und digitale Dienstleistungen. Transparenz und Fairness." />
+        <title>AGB digilevate Webagentur Zürich | Allgemeine Geschaeftsbedingungen Webdesign</title>
+        <meta name="description" content="Allgemeine Geschaeftsbedingungen (AGB) der digilevate Webagentur Zürich für Webdesign, Entwicklung und digitale Dienstleistungen. Transparenz und Fairness." />
       </Helmet>
       <div className="bg-gradient-to-br from-[#0a2a38] via-[#1d4a5f] to-[#0a2a38] text-white p-8">
         <div className="max-w-4xl mx-auto">
           <a href="/" className="text-[#2d9bf0] hover:underline mb-8">&larr; Zurück zur Startseite</a>
-          <h1 className="text-2xl md:text-4xl font-bold mb-8 gradient-text">Allgemeine Geschäftsbedingungen (AGB)</h1>
+          <h1 className="text-2xl md:text-4xl font-bold mb-8 gradient-text">Allgemeine Geschaeftsbedingungen (AGB)</h1>
           
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <h2 className="text-2xl font-semibold text-white">1. Geltungsbereich</h2>

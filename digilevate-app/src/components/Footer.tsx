@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     <div className="md:col-span-1">
                         <a href="#home" className="flex items-center mb-4">
                             <img
-                                src="ChatGPT Image 21. Sept. 2gfg025, 192_09_51.png"
+                                src="/responsive-webdesign-zuerich-digilevate.png"
                                 width={150}
                                 alt="Digilevate Logo"
                             />
