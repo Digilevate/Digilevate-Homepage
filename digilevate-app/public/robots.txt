@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /llms.txt
+
+Sitemap: https://www.digilevate.com/sitemap.xml

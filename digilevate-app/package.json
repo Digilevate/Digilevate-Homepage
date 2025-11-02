@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generatesitemap": "node sitemap-generator.cjs"
   },
   "dependencies": {
     "i18next": "^25.6.0",
@@ -19,7 +20,8 @@
     "react-helmet-async": "^2.0.5",
     "react-i18next": "^16.1.5",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.9.4"
+    "react-router-dom": "^7.9.4",
+    "sitemap": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
