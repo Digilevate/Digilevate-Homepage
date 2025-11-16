@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
     const navLinks = [
         { href: "#home", label: t('header.home') },
-        { href: "#services", label: t('header.services') },
+        { href: "#core-services", label: t('header.services') },
         { href: "#work", label: t('header.our_work') },
         { href: "#about", label: t('header.about_us') },
         { href: "#contact", label: t('header.contact') },
