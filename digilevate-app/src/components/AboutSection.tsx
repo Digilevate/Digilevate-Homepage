@@ -50,7 +50,7 @@ const AboutSection: React.FC = () => {
 
                     {/* Right Column: Founder Cards */}
                     <div className="lg:col-span-7 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                        <div className="glass-effect rounded-2xl p-6 sm:p-10 space-y-12 border border-white/5 relative bg-black/10">
+                        <div className="glass-effect rounded-3xl p-4 sm:p-10 space-y-8 sm:space-y-12 border border-white/5 relative bg-black/5 sm:bg-black/10">
                             <TeamProfile
                                 image="/loris-imbrogno.jpg"
                                 name="Loris Imbrogno"
@@ -60,7 +60,7 @@ const AboutSection: React.FC = () => {
                                 linkedinUrl="https://www.linkedin.com/in/loris-imbrogno-7861942a4"
                                 emailAddress="loris.imbrogno@digilevate.com"
                             />
-                            <div className="h-px bg-gradient-to-r from-transparent via-[#2d9bf0]/20 to-transparent"></div>
+                            <div className="h-px bg-gradient-to-r from-transparent via-[#2d9bf0]/20 to-transparent hidden sm:block"></div>
                             <TeamProfile
                                 image="/alessio-fano.jpg"
                                 name="Alessio Fano"
@@ -99,13 +99,10 @@ const TeamProfile: React.FC<TeamProfileProps> = ({ image, name, role, jobTitle, 
     const { t } = useTranslation();
     const [imageError, setImageError] = React.useState(false);
 
-    const company = jobTitle.split(' - ')[0];
-    const isGoogle = company.toLowerCase().includes('google');
-    const isSwisscom = company.toLowerCase().includes('swisscom');
-
     return (
-        <div className="flex flex-col items-center text-center gap-6 sm:flex-row sm:items-start sm:text-left sm:gap-10 group">
-            <div className="w-32 h-32 sm:w-44 sm:h-44 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-[#2d9bf0]/20 group-hover:border-[#2d9bf0] transition-all duration-500 shadow-2xl relative">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:gap-10 group">
+            {/* Image Container */}
+            <div className="relative w-full aspect-[4/5] sm:w-44 sm:h-44 rounded-3xl sm:rounded-2xl overflow-hidden flex-shrink-0 border-2 border-white/10 sm:border-[#2d9bf0]/20 group-hover:border-[#2d9bf0] transition-all duration-500 shadow-2xl">
                 {!imageError ? (
                     <img
                         src={image}
@@ -114,28 +111,44 @@ const TeamProfile: React.FC<TeamProfileProps> = ({ image, name, role, jobTitle, 
                         onError={() => setImageError(true)}
                     />
                 ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] flex items-center justify-center">
-                        <span className="text-4xl font-bold text-white">{name.charAt(0)}</span>
+                    <div className="w-full h-full bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] flex items-center justify-center text-white">
+                        <span className="text-4xl font-bold">{name.charAt(0)}</span>
                     </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Mobile Overlay: ONLY Name & Role */}
+                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent sm:hidden">
+                    <h4 className="text-2xl font-bold text-white mb-1">{name}</h4>
+                    <p className="text-[#2d9bf0] font-bold text-[10px] uppercase tracking-widest">{role}</p>
+                </div>
+
+                {/* Desktop Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden sm:block"></div>
             </div>
-            <div className="flex-1 space-y-4">
-                <div>
-                    <h4 className="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:text-[#2d9bf0] transition-colors">{name}</h4>
-                    <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 mb-3">
-                        <p className="text-[#2d9bf0] font-bold text-xs sm:text-sm uppercase tracking-widest">{role}</p>
-                        <div className={`px-4 py-1 rounded-full border text-[10px] font-bold uppercase tracking-widest flex items-center ${isGoogle ? 'bg-[#4285F4]/10 border-[#4285F4]/30 text-[#4285F4]' : isSwisscom ? 'bg-[#2d9bf0]/10 border-[#2d9bf0]/30 text-[#2d9bf0]' : 'bg-[#2d9bf0]/10 border-[#2d9bf0]/30 text-[#2d9bf0]'}`}>
-                            <span className="w-2 h-2 rounded-full bg-current mr-2 animate-pulse"></span>
-                            {company}
-                        </div>
+
+            {/* Content Container (Description, Badge, Links) */}
+            <div className="flex-1 mt-6 sm:mt-0 space-y-4">
+                {/* Desktop Name & Role */}
+                <div className="hidden sm:block">
+                    <h4 className="text-3xl font-bold text-white mb-2 group-hover:text-[#2d9bf0] transition-colors">{name}</h4>
+                    <p className="text-[#2d9bf0] font-bold text-xs uppercase tracking-widest">{role}</p>
+                </div>
+
+                {/* Apprentice Badge (Always visible, outside image) */}
+                <div className="flex">
+                    <div className="bg-[#2d9bf0]/10 border border-[#2d9bf0]/30 rounded-full px-4 py-1.5 flex items-center">
+                        <span className="w-2 h-2 rounded-full bg-[#2d9bf0] mr-2 animate-pulse"></span>
+                        <span className="text-white text-[10px] font-bold uppercase tracking-widest">{jobTitle}</span>
                     </div>
                 </div>
+
                 <p className="text-gray-300 text-sm sm:text-base leading-relaxed italic relative">
-                    <span className="text-[#2d9bf0] text-3xl absolute -left-5 -top-2 opacity-10">"</span>
+                    <span className="text-[#2d9bf0] text-3xl absolute -left-5 -top-2 opacity-10 hidden sm:block">"</span>
                     {description}
                 </p>
-                <div className="flex items-center justify-center sm:justify-start space-x-6 pt-2">
+
+                {/* Social Links */}
+                <div className="flex items-center space-x-6 pt-2">
                     <a
                         href={linkedinUrl}
                         target="_blank"
