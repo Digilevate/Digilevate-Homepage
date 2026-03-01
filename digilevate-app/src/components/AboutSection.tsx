@@ -21,9 +21,9 @@ const AboutSection: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="lg:col-span-5 space-y-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                    <div className="lg:col-span-5 space-y-12 animate-fade-in-up text-center lg:text-left" style={{ animationDelay: '0.3s' }}>
                         <div className="space-y-6">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-white border-l-4 border-[#2d9bf0] pl-6">
+                            <h3 className="text-2xl sm:text-3xl font-bold text-white lg:border-l-4 lg:border-[#2d9bf0] lg:pl-6">
                                 {t('about_section.why_title')}
                             </h3>
                             <div className="space-y-6 text-gray-300">
@@ -35,12 +35,12 @@ const AboutSection: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="grid gap-4">
+                        <div className="grid gap-4 max-w-sm mx-auto lg:mx-0">
                             <ListItem text={t('about_section.list_item1')} />
                             <ListItem text={t('about_section.list_item2')} />
                             <ListItem text={t('about_section.list_item3')} />
                         </div>
-                        <div className="pt-6">
+                        <div className="pt-6 flex justify-center lg:justify-start">
                             <a href="#contact" className="bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-8 py-4 rounded-xl text-lg font-bold hover-glow transition-all duration-300 group inline-flex items-center">
                                 {t('about_section.start_project')}
                                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -79,7 +79,7 @@ const AboutSection: React.FC = () => {
 };
 
 const ListItem: React.FC<{ text: string }> = ({ text }) => (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-4 text-left">
         <div className="w-2 h-2 bg-[#2d9bf0] rounded-full flex-shrink-0 shadow-[0_0_10px_#2d9bf0]"></div>
         <span className="text-gray-300 font-medium">{text}</span>
     </div>
