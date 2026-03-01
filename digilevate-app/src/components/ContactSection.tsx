@@ -226,7 +226,7 @@ const ContactInfo = () => {
           <InfoItem
             icon={<Phone className="w-6 h-6 text-white" />}
             title={t('contact_section.call_us')}
-            lines={[t('contact_section.available_for_consultation')]}
+            lines={["+41 76 672 86 86", t('contact_section.available_for_consultation')]}
           />
           <InfoItem
             icon={<MapPin className="w-6 h-6 text-white" />}

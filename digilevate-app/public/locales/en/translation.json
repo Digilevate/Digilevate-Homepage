@@ -16,66 +16,21 @@
     "contact": "Contact",
     "get_free_quote": "Get Free Quote"
   },
-  "services_section": {
-    "title_part1": "Find the Perfect ",
-    "title_part2": "Plan",
-    "title_part3": " for You",
-    "from": "from",
-    "description": "From stunning starter sites to full e-commerce solutions, we have the perfect package to elevate your digital presence and grow your business.",
-    "most_popular": "Most Popular",
-    "get_started": "Get Started",
-    "support_title": "Ongoing Support & Growth",
-    "support_description": "Keep your website secure, updated, and performing at its best with our monthly maintenance service.",
-    "support_item1_title": "Website Maintenance",
-    "support_item1_description": "Regular updates and security patches",
-    "support_item2_title": "Performance Monitoring",
-    "support_item2_description": "Monthly reports and optimizations",
-    "support_item3_title": "Priority Support",
-    "support_item3_description": "Quick response for any issues",
-    "learn_more_support": "Learn More About Support"
-  },
-  "services": {
-    "starter_site": {
-      "name": "Starter Site",
-      "tagline": "Perfect for small businesses",
-      "ideal_for": "Small businesses, startups, personal brands",
-      "features": [
-        "Custom responsive design",
-        "Basic SEO optimization",
-        "Contact form integration",
-        "Mobile-friendly design",
-        "1 month support and hosting",
-        "Basic analytics setup"
-      ]
-    },
-    "business_pro": {
-      "name": "Business Pro",
-      "tagline": "Most popular choice",
-      "ideal_for": "Medium businesses, agencies, consultants",
-      "features": [
-        "Premium custom design",
-        "Advanced SEO optimization",
-        "Blog functionality",
-        "Social media integration",
-        "3 months support and hosting",
-        "Advanced analytics",
-        "Live chat integration"
-      ]
-    },
-    "e_commerce": {
-      "name": "E-Commerce",
-      "tagline": "Complete online store",
-      "ideal_for": "Product businesses, online retailers",
-      "features": [
-        "Custom e-commerce design",
-        "Unlimited products",
-        "Secure payment processing",
-        "Order management system",
-        "Email marketing integration",
-        "Advanced analytics",
-        "6 months support and hosting"
-      ]
-    }
+  "ai_automation": {
+    "badge": "AI & AUTOMATION",
+    "title_part1": "Increase efficiency through ",
+    "title_part2": "Intelligent Solutions",
+    "description": "We help SMEs eliminate repetitive tasks and revolutionize customer service through cutting-edge AI technologies.",
+    "learn_more": "Learn more",
+    "cta_title": "Ready for the future?",
+    "cta_description": "Let's analyze together which processes in your company can be optimized by AI.",
+    "cta_button": "Request Free Consultation Now",
+    "use_case_1_title": "AI Chatbots",
+    "use_case_1_desc": "24/7 customer advice and lead qualification on your website.",
+    "use_case_2_title": "Process Automation",
+    "use_case_2_desc": "Automated data processing and workflow optimization for SMEs.",
+    "use_case_3_title": "Intelligent Scheduling",
+    "use_case_3_desc": "Automated appointment bookings and resource management."
   },
   "core_services_section": {
     "title_part1": "Our",
@@ -93,40 +48,60 @@
   "portfolio_section": {
     "title_part1": "Our Recent ",
     "title_part2": "Projects",
-    "description": "Explore our portfolio of successful projects. Each website is crafted with precision, designed for performance, and built to convert visitors into customers."
+    "description": "Explore our portfolio of successful projects. Each website is crafted with precision, designed for performance, and built to convert visitors into customers.",
+    "filter_recent": "Recent Projects",
+    "filter_web": "Web Development",
+    "filter_seo": "SEO & Design",
+    "filter_ecommerce": "E-Commerce",
+    "filter_all": "All"
   },
   "projects": {
+    "massagenatelier": {
+      "title": "Massagenatelier",
+      "description": "Comprehensive optimization of the existing web presence. Through targeted SEO and a fresh design with Squarespace, we were able to significantly increase online visibility and improve the user experience.",
+      "category": "SEO & Design"
+    },
+    "degagarage": {
+      "title": "Dega Garage",
+      "description": "Complete new development of the web presence for a garage. With React and Supabase, a high-performance and scalable solution was created that efficiently manages customer inquiries and strengthens brand trust.",
+      "category": "Web Development"
+    },
+    "collina_chocolates": {
+      "title": "Collina Chocolates",
+      "description": "An elegant online store for handmade chocolates. Implemented with React and Supabase for robust data management. The system offers seamless email order processing and a modern design that highlights the premium quality of the products.",
+      "category": "E-Commerce"
+    },
     "physiosteo_montagna": {
       "title": "Physiosteo Montagna",
-      "description": "A modern and professional website for a physiotherapy and osteopathy practice. The site clearly presents their services, team, and philosophy, with a focus on personalized and holistic treatment. It's designed to be welcoming and informative for new and existing patients.",
-      "category": "Redesign & Web Development"
+      "description": "A modern and professional website for a physical therapy and osteopathy practice. The website clearly presents its services, team, and philosophy. Focus on personalized and holistic treatment.",
+      "category": "SEO & Design"
     },
     "personal_portfolio": {
-      "title": "Personal Portfolio Website",
-      "description": "A sleek and personal portfolio for a software engineer. It showcases his skills, experience, and a variety of projects in a clean and organized manner. The site acts as a digital resume and a testament to his passion for technology.",
-      "category": "Web Design"
+      "title": "Personal Portfolio",
+      "description": "An elegant portfolio for a software developer. It presents skills and experiences in a clean way. The website serves as a digital resume and proof of technological passion.",
+      "category": "Web Development"
     }
   },
   "about_section": {
     "title_part1": "Meet the ",
     "title_part2": "Founders",
-    "title_part3": "",
+    "title_part3": " ",
     "description": "Two passionate tech entrepreneurs on a mission to help businesses succeed in the digital world.",
     "why_title": "Our Mission: Unleashing Digital Potential",
-    "why_description1": "We founded Digilevate out of a clear observation: Many great companies are losing customers due to outdated websites and a lack of digital visibility. Their full potential remains untapped, which is what we change for them.",
-    "why_description2": "Our passion is to merge cutting-edge technology with strategic design. We don't just build websites – we create digital platforms that deliver measurable results and present your brand in the best possible light.",
-    "list_item1": "Proven Expertise: With combined experience from demanding projects at Google and Swisscom.",
-    "list_item2": "At the Forefront: Experts in the latest web technologies and design trends.",
-    "list_item3": "Over 10 years of combined experience in web development and IT.",
+    "why_description1": "We founded Digilevate to help SMEs reach their full potential. Many great companies lose customers through outdated websites and a lack of visibility.",
+    "why_description2": "Our passion is to merge cutting-edge technology with strategic design. We create digital platforms that deliver measurable results and present your brand in the best light.",
+    "list_item1": "Proven Expertise: Combined experience from demanding projects at Google and Swisscom.",
+    "list_item2": "At the Forefront: Experts in the latest technologies & AI.",
+    "list_item3": "Individual Solutions: Each project is unique and tailored to your goals.",
     "start_project": "Start Your Project With Us"
   },
   "founder_profile": {
     "loris_role": "Co-Founder & Strategy & Growth Director",
-    "loris_job_title": "Google - Computer Science Apprentice, 3rd Year",
-    "loris_description": "As Strategy & Growth Director, Loris is the strategic mind of Digilevate. He develops the company's long-term vision, identifies new growth opportunities, and writes code to create innovative solutions. His role is to ensure that Digilevate grows sustainably and meets the needs of the market.",
+    "loris_job_title": "Google - Computer Science Tech",
+    "loris_description": "As Strategy & Growth Director, Loris is the strategic mind of Digilevate. He lead the company's vision and growth while being actively involved in development.",
     "alessio_role": "Co-Founder & Creative Development Director",
-    "alessio_job_title": "Swisscom - Computer Science Apprentice, 3rd Year",
-    "alessio_description": "As Creative Development Director, Alessio combines innovative design with the latest technology. He is the driving force behind the creative and technological implementation of our projects, ensuring that every website is not only aesthetically pleasing but also functional and user-friendly.",
+    "alessio_job_title": "Swisscom - Computer Science Tech",
+    "alessio_description": "As Creative Development Director, Alessio lead the creative and technological implementation of our projects. He specializes in merging design with modern code.",
     "linkedin": "LinkedIn",
     "email": "Email"
   },
@@ -145,7 +120,7 @@
       "name": "Sandrine Montagna",
       "company": "Physiosteo Montagna",
       "role": "Owner",
-      "content": "Excellent service! The webmaster is very professional, attentive, and always responsive. Loris and his team handled the complete redesign of our website, which is modern, clear, and perfectly tailored to our needs. The communication was smooth and pleasant from start to finish..."
+      "content": "Excellent service! Loris and his team handled the complete redesign of our website, which is modern, clear, and perfectly tailored to our needs."
     },
     "ilija_predogac": {
       "name": "Ilija Predogac",
@@ -161,53 +136,38 @@
     }
   },
   "contact_section": {
-    "thank_you_title": "Thank You for Your Inquiry!",
-    "thank_you_message": "We've received your message and will get back to you within 24 hours.",
-    "send_another_message": "Send Another Message",
     "title_part1": "Ready to ",
     "title_part2": "Elevate",
     "title_part3": " Your Brand?",
-    "description": "Let's discuss your project and create something amazing together. Get your free consultation and detailed proposal today.",
-    "honeypot_label": "Don’t fill this out:",
+    "description": "Let's discuss your project and create something amazing together. Get your free consultation today.",
+    "send_inquiry": "Send Inquiry",
     "sending": "Sending...",
-    "send_inquiry": "Send Your Inquiry",
-    "js_disabled_message": "JavaScript is disabled; submitting will redirect to the success page.",
-    "error_message": "Something went wrong sending your message. Please try again.",
-    "full_name_label": "Full Name *",
+    "full_name_label": "Name *",
     "full_name_placeholder": "Your full name",
-    "email_label": "Email Address *",
+    "email_label": "Email *",
     "email_placeholder": "your@email.com",
     "company_label": "Company",
     "company_placeholder": "Your company name",
     "phone_label": "Phone",
     "phone_placeholder": "Your phone number",
-    "desired_timeline_label": "Desired Timeline",
-    "desired_timeline_placeholder": "e.g., 2-3 months, ASAP, flexible",
     "project_details_label": "Project Details *",
     "project_details_placeholder": "Tell us about your project, goals, and any specific requirements...",
-    "project_type_label": "Project Type",
-    "project_type_new_website": "New Website",
-    "project_type_website_redesign": "Website Redesign",
-    "project_type_ecommerce_store": "E-commerce Store",
-    "project_type_website_maintenance": "Website Maintenance",
-    "project_type_other": "Other",
-    "budget_range_label": "Budget Range",
-    "budget_range_under_2000": "Under CHF 2,000",
-    "budget_range_2000_4000": "CHF 2,000 - CHF 4,000",
-    "budget_range_4000_6000": "CHF 4,000 - CHF 6,000",
-    "budget_range_6000_plus": "CHF 6,000+",
-    "budget_range_not_sure": "Not sure yet",
-    "select_an_option": "Select an option",
     "get_in_touch": "Get in Touch",
     "email_us": "Email Us",
     "call_us": "Call Us",
-    "available_for_consultation": "Available for consultation calls",
+    "available_for_consultation": "Available for consultation",
     "location": "Location",
-    "remote_first_team": "Remote-first team from Zurich, serving clients worldwide",
-    "why_choose_digilevate": "Why Choose Digilevate?  ",
-    "free_consultation": "Free consultation & proposal",
-    "fast_response_time": "Fast 24-hour response time",
-    "transparent_pricing": "Transparent pricing"
+    "remote_first_team": "Zurich, Switzerland",
+    "why_choose_digilevate": "Why Choose Digilevate?",
+    "free_consultation": "Free Consultation",
+    "fast_response_time": "Fast Response Time",
+    "transparent_pricing": "Transparent Pricing",
+    "honeypot_label": "Don't fill this if you're human",
+    "thank_you_title": "Thank You!",
+    "thank_you_message": "Your message has been successfully sent. We will get back to you as soon as possible.",
+    "send_another_message": "Send another message",
+    "error_message": "An error occurred while sending your message. Please try again later.",
+    "js_disabled_message": "JavaScript is disabled. Please contact us directly via email."
   },
   "footer": {
     "description": "Elevating your digital presence through beautiful design and robust technology.",
