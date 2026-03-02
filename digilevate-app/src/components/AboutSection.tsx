@@ -107,7 +107,7 @@ const TeamProfile: React.FC<TeamProfileProps> = ({ image, name, role, jobTitle, 
                     <img
                         src={image}
                         alt={name}
-                        className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                         onError={() => setImageError(true)}
                     />
                 ) : (
