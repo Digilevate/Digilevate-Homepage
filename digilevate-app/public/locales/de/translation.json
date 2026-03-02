@@ -22,9 +22,10 @@
     "title_part2": "Intelligente Lösungen",
     "description": "Wir helfen KMUs dabei, repetitive Aufgaben zu eliminieren und den Kundenservice durch modernste KI-Technologien zu revolutionieren.",
     "learn_more": "Mehr erfahren",
+    "learn_more_arrow": "",
     "cta_title": "Bereit für die Zukunft?",
     "cta_description": "Lassen Sie uns gemeinsam analysieren, welche Prozesse in Ihrem Unternehmen durch KI optimiert werden können.",
-    "cta_button": "Jetzt Gratis-Consulting anfragen",
+    "cta_button": "Jetzt kostenloses Angebot einholen",
     "use_case_1_title": "KI-Chatbots",
     "use_case_1_desc": "24/7 Kundenberatung und Lead-Qualifizierung auf Ihrer Webseite.",
     "use_case_2_title": "Prozessautomatisierung",
@@ -45,8 +46,16 @@
     "service4_title": "Zuverlässige Wartung & Support",
     "service4_description": "Auch nach dem Launch sind wir für Sie da. Wir halten Ihre Website technisch aktuell, sicher und leistungsfähig."
   },
+  "services_section": {
+    "description": "Wir entwickeln performante Webseiten, optimieren Ihre digitale Sichtbarkeit und implementieren intelligente KI-Automatisierungen. Alles was sie für Ihren digitalen Vorsprung brauchen."
+  },
+  "unified_expertise": {
+    "title_part1": "Expertise in Web &",
+    "title_part2": "KI-Lösungen",
+    "meta_description": "Digilevate bietet professionelle Webentwicklung, SEO und KI-Automatisierung in Zürich. Wir erstellen performante Webseiten und intelligente KI-Lösungen für KMU."
+  },
   "portfolio_section": {
-    "title_part1": "Unsere aktuellen ",
+    "title_part1": "Unsere ",
     "title_part2": "Projekte",
     "description": "Entdecken Sie unser Portfolio erfolgreicher Projekte. Jede Website wird präzise gefertigt, auf Leistung ausgelegt und darauf ausgelegt, Besucher in Kunden umzuwandeln.",
     "filter_recent": "Letzte Projekte",

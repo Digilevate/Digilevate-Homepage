@@ -5,7 +5,7 @@
     "title_part2": "Elevate",
     "title_part3": " Your Business",
     "description": "Stunning design, powerful performance, and measurable results. We are Digilevate, your partners in digital growth and online success.",
-    "get_quote": "Get Your Free Quote",
+    "get_quote": "Get your free quote now",
     "view_work": "View Our Work"
   },
   "header": {
@@ -22,9 +22,10 @@
     "title_part2": "Intelligent Solutions",
     "description": "We help SMEs eliminate repetitive tasks and revolutionize customer service through cutting-edge AI technologies.",
     "learn_more": "Learn more",
+    "learn_more_arrow": "",
     "cta_title": "Ready for the future?",
     "cta_description": "Let's analyze together which processes in your company can be optimized by AI.",
-    "cta_button": "Request Free Consultation Now",
+    "cta_button": "Get your free quote now",
     "use_case_1_title": "AI Chatbots",
     "use_case_1_desc": "24/7 customer advice and lead qualification on your website.",
     "use_case_2_title": "Process Automation",
@@ -41,12 +42,20 @@
     "service2_title": "Powerful Web Development",
     "service2_description": "With modern technologies like React, we build fast, secure, and scalable websites that function flawlessly on all devices.",
     "service3_title": "Visibility through SEO",
-    "service3_description": "We ensure your website is found by potential customers in Zurich and the surrounding area on Google – for measurable success.",
+    "service3_description": "We ensure your website is found by potential customers in Zurich and the surrounding area on Google for measurable success.",
     "service4_title": "Reliable Maintenance & Support",
     "service4_description": "Even after launch, we are there for you. We keep your website technically up-to-date, secure, and powerful."
   },
+  "services_section": {
+    "description": "We develop high-performance websites, optimize your digital visibility, and implement intelligent AI automations providing everything you need for a competitive digital edge."
+  },
+  "unified_expertise": {
+    "title_part1": "Expertise in Web &",
+    "title_part2": "AI Solutions",
+    "meta_description": "Digilevate offers professional web development, SEO and AI automation in Zurich. We create high-performance websites and intelligent AI solutions for SMEs."
+  },
   "portfolio_section": {
-    "title_part1": "Our Recent ",
+    "title_part1": "Our ",
     "title_part2": "Projects",
     "description": "Explore our portfolio of successful projects. Each website is crafted with precision, designed for performance, and built to convert visitors into customers.",
     "filter_recent": "Recent Projects",

@@ -10,19 +10,19 @@ const AIAutomationSection: React.FC = () => {
             title: t('ai_automation.use_case_1_title'),
             desc: t('ai_automation.use_case_1_desc'),
             icon: <Bot className="w-8 h-8 text-[#2d9bf0]" />,
-            color: "from-blue-500/20 to-cyan-500/20"
+            color: "from-[#2d9bf0]/40 to-[#4db8ff]/20"
         },
         {
             title: t('ai_automation.use_case_2_title'),
             desc: t('ai_automation.use_case_2_desc'),
             icon: <Zap className="w-8 h-8 text-[#2d9bf0]" />,
-            color: "from-purple-500/20 to-blue-500/20"
+            color: "from-[#4db8ff]/40 to-[#2d9bf0]/20"
         },
         {
             title: t('ai_automation.use_case_3_title'),
             desc: t('ai_automation.use_case_3_desc'),
             icon: <Calendar className="w-8 h-8 text-[#2d9bf0]" />,
-            color: "from-cyan-500/20 to-purple-500/20"
+            color: "from-[#2d9bf0]/40 to-[#4db8ff]/20"
         }
     ];
 
@@ -49,13 +49,13 @@ const AIAutomationSection: React.FC = () => {
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {useCases.map((uc, idx) => (
                         <div key={idx} className="group relative">
-                            <div className={`absolute -inset-0.5 bg-gradient-to-r ${uc.color} rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500`}></div>
+                            <div className={`absolute -inset-0.5 bg-gradient-to-r ${uc.color} rounded-2xl blur opacity-20 group-hover:opacity-100 transition duration-500`}></div>
                             <div className="relative glass-effect p-8 rounded-2xl border border-white/5 flex flex-col h-full transform transition duration-500 hover:-translate-y-2">
                                 <div className="w-16 h-16 bg-[#2d9bf0]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-500">
                                     {uc.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-white mb-4">{uc.title}</h3>
-                                <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                                <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
                                     {uc.desc}
                                 </p>
                                 <a href="#contact" className="flex items-center text-[#2d9bf0] font-semibold text-sm group-hover:translate-x-2 transition duration-300">
