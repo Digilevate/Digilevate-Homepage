@@ -1,6 +1,6 @@
 {
   "hero": {
-    "trusted_by": "Von 10+ Unternehmen vertraut",
+    "trusted_by": "Von 15+ Unternehmen vertraut",
     "title_part1": "Digitale Erlebnisse, die ",
     "title_part2": "begeistern ",
     "title_part3": "und Sie zum wachsen bringt",
@@ -16,66 +16,21 @@
     "contact": "Kontakt",
     "get_free_quote": "Kostenloses Angebot einholen"
   },
-  "services_section": {
-    "title_part1": "Finden Sie den perfekten ",
-    "title_part2": "Plan",
-    "title_part3": " für Sie",
-    "from": "ab",
-    "description": "Von beeindruckenden Starter-Websites bis hin zu umfassenden E-Commerce-Lösungen bieten wir das perfekte Paket, um Ihre digitale Präsenz zu steigern und Ihr Geschäft auszubauen.",
-    "most_popular": "Am beliebtesten",
-    "get_started": "Jetzt starten",
-    "support_title": "Laufender Support & Wachstum",
-    "support_description": "Halten Sie Ihre Website sicher, aktuell und leistungsfähig mit unserem monatlichen Wartungsservice.",
-    "support_item1_title": "Website-Wartung",
-    "support_item1_description": "Regelmäßige Updates und Sicherheitspatches",
-    "support_item2_title": "Leistungsüberwachung",
-    "support_item2_description": "Monatliche Berichte und Optimierungen",
-    "support_item3_title": "Priorisierter Support",
-    "support_item3_description": "Schnelle Reaktion bei Problemen",
-    "learn_more_support": "Mehr über Support erfahren"
-  },
-  "services": {
-    "starter_site": {
-      "name": "Starter-Website",
-      "tagline": "Perfekt für kleine Unternehmen",
-      "ideal_for": "Kleine Unternehmen, Startups, persönliche Marken",
-      "features": [
-        "Individuelles responsives Design",
-        "Grundlegende SEO-Optimierung",
-        "Kontaktformular-Integration",
-        "Mobilfreundliches Design",
-        "1 Monat Support und Hosting",
-        "Grundlegende Analyse-Einrichtung"
-      ]
-    },
-    "business_pro": {
-      "name": "Business Pro",
-      "tagline": "Beliebteste Wahl",
-      "ideal_for": "Mittlere Unternehmen, Agenturen, Berater",
-      "features": [
-        "Premium individuelles Design",
-        "Erweiterte SEO-Optimierung",
-        "Blog-Funktionalität",
-        "Social-Media-Integration",
-        "3 Monate Support und Hosting",
-        "Erweiterte Analysen",
-        "Live-Chat-Integration"
-      ]
-    },
-    "e_commerce": {
-      "name": "E-Commerce",
-      "tagline": "Kompletter Online-Shop",
-      "ideal_for": "Produktunternehmen, Online-Händler",
-      "features": [
-        "Individuelles E-Commerce-Design",
-        "Unbegrenzte Produkte",
-        "Sichere Zahlungsabwicklung",
-        "Auftragsverwaltungssystem",
-        "E-Mail-Marketing-Integration",
-        "Erweiterte Analysen",
-        "6 Monate Support und Hosting"
-      ]
-    }
+  "ai_automation": {
+    "badge": "KI & AUTOMATION",
+    "title_part1": "Effizienz steigern durch ",
+    "title_part2": "Intelligente Lösungen",
+    "description": "Wir helfen KMUs dabei, repetitive Aufgaben zu eliminieren und den Kundenservice durch modernste KI-Technologien zu revolutionieren.",
+    "learn_more": "Mehr erfahren",
+    "cta_title": "Bereit für die Zukunft?",
+    "cta_description": "Lassen Sie uns gemeinsam analysieren, welche Prozesse in Ihrem Unternehmen durch KI optimiert werden können.",
+    "cta_button": "Jetzt Gratis-Consulting anfragen",
+    "use_case_1_title": "KI-Chatbots",
+    "use_case_1_desc": "24/7 Kundenberatung und Lead-Qualifizierung auf Ihrer Webseite.",
+    "use_case_2_title": "Prozessautomatisierung",
+    "use_case_2_desc": "Automatisierte Datenverarbeitung und Workflow-Optimierung für KMU.",
+    "use_case_3_title": "Intelligente Planung",
+    "use_case_3_desc": "Automatisierte Terminbuchungen und Ressourcenmanagement."
   },
   "core_services_section": {
     "title_part1": "Unsere",
@@ -88,23 +43,43 @@
     "service3_title": "Sichtbarkeit durch SEO",
     "service3_description": "Wir sorgen dafür, dass Ihre Webseite von potenziellen Kunden in Zürich und Umgebung auf Google gefunden wird – für messbaren Erfolg.",
     "service4_title": "Zuverlässige Wartung & Support",
-    "service4_description": "Auch nach dem Livegang sind wir für Sie da. Wir halten Ihre Webseite technisch aktuell, sicher und leistungsfähig."
+    "service4_description": "Auch nach dem Launch sind wir für Sie da. Wir halten Ihre Website technisch aktuell, sicher und leistungsfähig."
   },
   "portfolio_section": {
     "title_part1": "Unsere aktuellen ",
     "title_part2": "Projekte",
-    "description": "Entdecken Sie unser Portfolio erfolgreicher Projekte. Jede Website wird präzise gefertigt, auf Leistung ausgelegt und darauf ausgelegt, Besucher in Kunden umzuwandeln."
+    "description": "Entdecken Sie unser Portfolio erfolgreicher Projekte. Jede Website wird präzise gefertigt, auf Leistung ausgelegt und darauf ausgelegt, Besucher in Kunden umzuwandeln.",
+    "filter_recent": "Letzte Projekte",
+    "filter_web": "Webentwicklung",
+    "filter_seo": "SEO & Design",
+    "filter_ecommerce": "E-Commerce",
+    "filter_all": "Alle"
   },
   "projects": {
+    "massagenatelier": {
+      "title": "Massagenatelier",
+      "description": "Umfassende Optimierung der bestehenden Webpräsenz. Durch gezieltes SEO und ein frisches Design mit Squarespace konnten wir die Online-Sichtbarkeit massgeblich steigern und das Nutzererlebnis verbessern.",
+      "category": "SEO & Design"
+    },
+    "degagarage": {
+      "title": "Dega Garage",
+      "description": "Komplette Neuentwicklung der Webpräsenz für eine Garage. Mit React und Supabase wurde eine performante und skalierbare Lösung geschaffen, die Kundenanfragen effizient verwaltet und das Vertrauen in die Marke stärkt.",
+      "category": "Webentwicklung"
+    },
+    "collina_chocolates": {
+      "title": "Collina Chocolates",
+      "description": "Ein eleganter Online-Shop für handgefertigte Schokoladen. Implementiert mit React und Supabase für eine robuste Datenverwaltung. Das System bietet eine nahtlose E-Mail-Bestellabwicklung und ein modernes Design, das die Premium-Qualität der Produkte unterstreicht.",
+      "category": "E-Commerce"
+    },
     "physiosteo_montagna": {
       "title": "Physiosteo Montagna",
-      "description": "Eine moderne und professionelle Website für eine Physiotherapie- und Osteopathiepraxis. Die Website präsentiert klar ihre Dienstleistungen, ihr Team und ihre Philosophie, mit einem Fokus auf personalisierte und ganzheitliche Behandlung. Sie ist so konzipiert, dass sie neue und bestehende Patienten willkommen heißt und informiert.",
-      "category": "Redesign & Webentwicklung"
+      "description": "Eine moderne und professionelle Website für eine Physiotherapie- und Osteopathiepraxis. Die Website präsentiert klar ihre Dienstleistungen, ihr Team und ihre Philosophie. Fokus auf personalisierte und ganzheitliche Behandlung.",
+      "category": "SEO & Design"
     },
     "personal_portfolio": {
-      "title": "Persönliches Portfolio-Website",
-      "description": "Ein elegantes und persönliches Portfolio für einen Softwareentwickler. Es präsentiert seine Fähigkeiten, Erfahrungen und eine Vielzahl von Projekten auf saubere und organisierte Weise. Die Website dient als digitaler Lebenslauf und als Beweis seiner Leidenschaft für Technologie.",
-      "category": "Webdesign"
+      "title": "Persönliches Portfolio",
+      "description": "Ein elegantes Portfolio für einen Softwareentwickler. Es präsentiert Fähigkeiten und Erfahrungen auf saubere Weise. Die Website dient als digitaler Lebenslauf und Beweis technologischer Leidenschaft.",
+      "category": "Webentwicklung"
     }
   },
   "about_section": {
@@ -113,20 +88,20 @@
     "title_part3": " kennen",
     "description": "Zwei leidenschaftliche Tech-Unternehmer mit der Mission, Unternehmen in der digitalen Welt zum Erfolg zu verhelfen.",
     "why_title": "Unsere Mission: Digitales Potenzial entfesseln",
-    "why_description1": "Wir haben Digilevate aus einer klaren Beobachtung heraus gegründet: Viele grossartige Unternehmen verlieren Kunden durch veraltete Websites und mangelnde digitale Sichtbarkeit. Ihr volles Potenzial bleibt ungenutzt, was wir für sie ändern.",
-    "why_description2": "Unsere Leidenschaft ist es, modernste Technologie mit strategischem Design zu verschmelzen. Wir bauen keine reinen Webseiten – wir schaffen digitale Plattformen, die messbare Ergebnisse liefern und Ihre Marke im besten Licht präsentieren.",
-    "list_item1": "Geprüfte Expertise: Mit der kombinierten Erfahrung aus anspruchsvollen Projekten bei Google und Swisscom.",
-    "list_item2": "Am Puls der Zeit: Experten für die neusten Webtechnologien und Design-Trends.",
-    "list_item3": "Über 10 Jahre kombinierte Erfahrung in Webentwicklung und IT",
+    "why_description1": "Wir haben Digilevate gegründet, um KMU zu helfen, ihr volles Potenzial auszuschöpfen. Viele grossartige Unternehmen verlieren Kunden durch veraltete Websites und mangelnde Sichtbarkeit.",
+    "why_description2": "Unsere Leidenschaft ist es, modernste Technologie mit strategischem Design zu verschmelzen. Wir schaffen digitale Plattformen, die messbare Ergebnisse liefern und Ihre Marke im besten Licht präsentieren.",
+    "list_item1": "Geprüfte Expertise: Mit der kombinierten Erfahrung aus anspruchsvollen Projekten bei Google and Swisscom.",
+    "list_item2": "Am Puls der Zeit: Experten für neuste Technologien & KI.",
+    "list_item3": "Individuelle Lösungen: Jedes Projekt ist einzigartig und auf Ihre Ziele zugeschnitten.",
     "start_project": "Starten Sie Ihr Projekt mit uns"
   },
   "founder_profile": {
     "loris_role": "Mitgründer & Strategy & Growth Director",
-    "loris_job_title": "Google - Informatiker Applikationsentwicklung, 3. Jahr",
-    "loris_description": "Als Strategy & Growth Director ist Loris der strategische Kopf von Digilevate. Er entwickelt die langfristige Vision des Unternehmens, identifiziert neue Wachstumschancen und schreibt Code, um innovative Lösungen zu schaffen. Seine Aufgabe ist es, sicherzustellen, dass Digilevate nachhaltig wächst und die Bedürfnisse des Marktes erfüllt.",
-    "alessio_role": "Mitgründer & Creative developement director",
-    "alessio_job_title": "Swisscom - Informatiker Applikationsentwicklung, 3. Jahr",
-    "alessio_description": "Als Creative Development Director verbindet Alessio innovatives Design mit modernster Technologie. Er ist die treibende Kraft hinter der kreativen und technologischen Umsetzung unserer Projekte und stellt sicher, dass jede Website nicht nur ästhetisch ansprechend, sondern auch funktional und benutzerfreundlich ist.",
+    "loris_job_title": "Google - Informatiker EFZ 3. Jahr",
+    "loris_description": "Als Strategy & Growth Director ist Loris der strategische Kopf von Digilevate. Er leitet die Vision und das Wachstum des Unternehmens, während er als Developer aktiv an der technischen Umsetzung beteiligt ist.",
+    "alessio_role": "Mitgründer & Creative Development Director",
+    "alessio_job_title": "Swisscom - Informatiker EFZ 3. Jahr",
+    "alessio_description": "Als Creative Development Director ist Alessio die treibende Kraft hinter der technologischen Umsetzung unserer Projekte. Er fokussiert sich primär auf die Entwicklung und modernes Design.",
     "linkedin": "LinkedIn",
     "email": "E-Mail"
   },
@@ -134,7 +109,7 @@
     "title_part1": "Was unsere ",
     "title_part2": "Kunden",
     "title_part3": " sagen",
-    "description": "Verlassen Sie sich nicht nur auf unser Wort. Hier erfahren Sie, was unsere Kunden über die Zusammenarbeit mit Digilevate zu sagen haben.",
+    "description": "Verlassen Sie sich nicht nur auf unser Wort. Hier erfahren Sie, was unsere Kunden sagen.",
     "projects_completed": "Abgeschlossene Projekte",
     "client_satisfaction": "Kundenzufriedenheit",
     "happy_clients": "Zufriedene Kunden",
@@ -145,7 +120,7 @@
       "name": "Sandrine Montagna",
       "company": "Physiosteo Montagna",
       "role": "Inhaberin",
-      "content": "Exzellenter Service! Der Webmaster ist sehr professionell, aufmerksam und stets ansprechbar. Loris und sein Team haben sich um die komplette Neugestaltung unserer Website gekümmert, die modern, übersichtlich und perfekt auf unsere Bedürfnisse zugeschnitten ist. Die Kommunikation verlief von Anfang bis Ende reibungslos..."
+      "content": "Exzellenter Service! Loris und sein Team haben sich um die komplette Neugestaltung unserer Website gekümmert, die modern, übersichtlich und perfekt auf unsere Bedürfnisse zugeschnitten ist."
     },
     "ilija_predogac": {
       "name": "Ilija Predogac",
@@ -161,53 +136,38 @@
     }
   },
   "contact_section": {
-    "thank_you_title": "Vielen Dank für Ihre Anfrage!",
-    "thank_you_message": "Wir haben Ihre Nachricht erhalten und werden uns innerhalb von 24 Stunden bei Ihnen melden.",
-    "send_another_message": "Eine weitere Nachricht senden",
     "title_part1": "Bereit, Ihre Marke zu ",
     "title_part2": "stärken",
     "title_part3": "?",
-    "description": "Lassen Sie uns Ihr Projekt besprechen und gemeinsam etwas Großartiges schaffen. Holen Sie sich noch heute Ihre kostenlose Beratung und ein detailliertes Angebot.",
-    "honeypot_label": "Bitte nicht ausfüllen:",
-    "sending": "Senden...",
-    "send_inquiry": "Ihre Anfrage senden",
-    "js_disabled_message": "JavaScript ist deaktiviert; die Übermittlung leitet zur Erfolgsseite weiter.",
-    "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-    "full_name_label": "Vollständiger Name *",
+    "description": "Lassen Sie uns gemeinsam etwas Großartiges schaffen. Holen Sie sich noch heute Ihre kostenlose Beratung.",
+    "send_inquiry": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "full_name_label": "Name *",
     "full_name_placeholder": "Ihr vollständiger Name",
-    "email_label": "E-Mail-Adresse *",
+    "email_label": "E-Mail *",
     "email_placeholder": "ihre@email.com",
     "company_label": "Unternehmen",
     "company_placeholder": "Ihr Firmenname",
     "phone_label": "Telefon",
     "phone_placeholder": "Ihre Telefonnummer",
-    "desired_timeline_label": "Gewünschter Zeitrahmen",
-    "desired_timeline_placeholder": "z.B. 2-3 Monate, so schnell wie möglich, flexibel",
     "project_details_label": "Projektdetails *",
     "project_details_placeholder": "Erzählen Sie uns von Ihrem Projekt, Ihren Zielen und spezifischen Anforderungen...",
-    "project_type_label": "Projekttyp",
-    "project_type_new_website": "Neue Website",
-    "project_type_website_redesign": "Website-Redesign",
-    "project_type_ecommerce_store": "E-Commerce-Shop",
-    "project_type_website_maintenance": "Website-Wartung",
-    "project_type_other": "Sonstiges",
-    "budget_range_label": "Budgetrahmen",
-    "budget_range_under_2000": "Unter CHF 2'000",
-    "budget_range_2000_4000": "CHF 2'000 - CHF 4'000",
-    "budget_range_4000_6000": "CHF 4'000 - CHF 6'000",
-    "budget_range_6000_plus": "CHF 6'000+",
-    "budget_range_not_sure": "Noch nicht sicher",
-    "select_an_option": "Option auswählen",
     "get_in_touch": "Kontakt aufnehmen",
-    "email_us": "Senden Sie uns eine E-Mail",
-    "call_us": "Rufen Sie uns an",
-    "available_for_consultation": "Verfügbar für Beratungsgespräche",
+    "email_us": "E-Mail senden",
+    "call_us": "Anrufen",
+    "available_for_consultation": "Für Beratungen verfügbar",
     "location": "Standort",
-    "remote_first_team": "Remote-First-Team aus Zürich, betreut Kunden weltweit",
-    "why_choose_digilevate": "Warum Digilevate wählen?",
-    "free_consultation": "Kostenlose Beratung & Angebot",
-    "fast_response_time": "Schnelle Antwortzeit von 24 Stunden",
-    "transparent_pricing": "Transparente Preise"
+    "remote_first_team": "Zürich, Schweiz",
+    "why_choose_digilevate": "Warum Digilevate?",
+    "free_consultation": "Kostenlose Erstberatung",
+    "fast_response_time": "Schnelle Reaktionszeit",
+    "transparent_pricing": "Transparente Preisgestaltung",
+    "honeypot_label": "Nicht ausfüllen, wenn Sie ein Mensch sind",
+    "thank_you_title": "Vielen Dank!",
+    "thank_you_message": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "send_another_message": "Weitere Nachricht senden",
+    "error_message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    "js_disabled_message": "JavaScript ist deaktiviert. Bitte kontaktieren Sie uns direkt per E-Mail."
   },
   "footer": {
     "description": "Wir steigern Ihre digitale Präsenz durch schönes Design und robuste Technologie.",

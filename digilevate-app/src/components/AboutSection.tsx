@@ -5,44 +5,73 @@ import { useTranslation } from 'react-i18next';
 const AboutSection: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section id="about" className="py-24 sm:py-32 relative">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#2d9bf0] to-transparent rounded-full opacity-5 blur-3xl"></div>
+        <section id="about" className="py-24 sm:py-32 relative overflow-hidden">
+            {/* Standard Background Element from main site style */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2d9bf0] rounded-full opacity-5 blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                        {t('about_section.title_part1')} <span className="gradient-text">{t('about_section.title_part2')}</span>{t('about_section.title_part3')}
-                    </h2>
-                    <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                        {t('about_section.description')}
-                    </p>
-                </div>
-
-                <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-                    <div className="space-y-8">
-                        <div className="space-y-6">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-white">{t('about_section.why_title')}</h3>
-                            <p className="text-lg text-gray-300 leading-relaxed">
-                                {t('about_section.why_description1')}
-                            </p>
-                            <p className="text-lg text-gray-300 leading-relaxed">
-                                {t('about_section.why_description2')}
-                            </p>
-                        </div>
-                        <ul className="space-y-4">
-                           <ListItem text={t('about_section.list_item1')} />
-                           <ListItem text={t('about_section.list_item2')} />
-                           <ListItem text={t('about_section.list_item3')} />
-                        </ul>
+                <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+                    {/* Left Column: Mission & Info */}
+                    <div className="lg:col-span-12 text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up">
+                            {t('about_section.title_part1')} <span className="gradient-text">{t('about_section.title_part2')}</span>{t('about_section.title_part3')}
+                        </h2>
+                        <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                            {t('about_section.description')}
+                        </p>
                     </div>
-                    <FoundersCard />
-                </div>
 
-                <div className="text-center">
-                    <a href="#contact" className="bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-8 py-4 rounded-lg text-lg font-semibold hover-glow transition-all duration-300 group inline-flex items-center">
-                        {t('about_section.start_project')}
-                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </a>
+                    <div className="lg:col-span-5 space-y-12 animate-fade-in-up text-center lg:text-left" style={{ animationDelay: '0.3s' }}>
+                        <div className="space-y-6">
+                            <h3 className="text-2xl sm:text-3xl font-bold text-white lg:border-l-4 lg:border-[#2d9bf0] lg:pl-6">
+                                {t('about_section.why_title')}
+                            </h3>
+                            <div className="space-y-6 text-gray-300">
+                                <p className="text-lg leading-relaxed">
+                                    {t('about_section.why_description1')}
+                                </p>
+                                <p className="text-lg leading-relaxed">
+                                    {t('about_section.why_description2')}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid gap-4 max-w-sm mx-auto lg:mx-0">
+                            <ListItem text={t('about_section.list_item1')} />
+                            <ListItem text={t('about_section.list_item2')} />
+                            <ListItem text={t('about_section.list_item3')} />
+                        </div>
+                        <div className="pt-6 flex justify-center lg:justify-start">
+                            <a href="#contact" className="bg-[#2d9bf0] hover:bg-[#4db8ff] text-white px-8 py-4 rounded-xl text-lg font-bold hover-glow transition-all duration-300 group inline-flex items-center">
+                                {t('about_section.start_project')}
+                                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Right Column: Founder Cards */}
+                    <div className="lg:col-span-7 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                        <div className="glass-effect rounded-3xl p-4 sm:p-10 space-y-8 sm:space-y-12 border border-white/5 relative bg-black/5 sm:bg-black/10">
+                            <TeamProfile
+                                image="/loris-imbrogno.jpg"
+                                name="Loris Imbrogno"
+                                role={t('founder_profile.loris_role')}
+                                jobTitle={t('founder_profile.loris_job_title')}
+                                description={t('founder_profile.loris_description')}
+                                linkedinUrl="https://www.linkedin.com/in/loris-imbrogno-7861942a4"
+                                emailAddress="loris.imbrogno@digilevate.com"
+                            />
+                            <div className="h-px bg-gradient-to-r from-transparent via-[#2d9bf0]/20 to-transparent hidden sm:block"></div>
+                            <TeamProfile
+                                image="/alessio-fano.jpg"
+                                name="Alessio Fano"
+                                role={t('founder_profile.alessio_role')}
+                                jobTitle={t('founder_profile.alessio_job_title')}
+                                description={t('founder_profile.alessio_description')}
+                                linkedinUrl="https://www.linkedin.com/in/alessio-giuseppe-fano/"
+                                emailAddress="alessio.fano@digilevate.com"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,43 +79,14 @@ const AboutSection: React.FC = () => {
 };
 
 const ListItem: React.FC<{ text: string }> = ({ text }) => (
-    <li className="flex items-center space-x-4">
-        <div className="w-3 h-3 bg-[#2d9bf0] rounded-full flex-shrink-0"></div>
-        <span className="text-gray-300">{text}</span>
-    </li>
+    <div className="flex items-center space-x-4 text-left">
+        <div className="w-2 h-2 bg-[#2d9bf0] rounded-full flex-shrink-0 shadow-[0_0_10px_#2d9bf0]"></div>
+        <span className="text-gray-300 font-medium">{text}</span>
+    </div>
 );
 
-const FoundersCard: React.FC = () => {
-    const { t } = useTranslation();
-    return (
-        <div className="glass-effect rounded-2xl p-8 hover-glow transition-all duration-500">
-            <div className="space-y-8">
-                <FounderProfile
-                    initial="L"
-                    name="Loris Imbrogno"
-                    role={t('founder_profile.loris_role')}
-                    jobTitle={t('founder_profile.loris_job_title')}
-                    description={t('founder_profile.loris_description')}
-                    linkedinUrl="https://www.linkedin.com/in/loris-imbrogno-7861942a4"
-                    emailAddress="loris.imbrogno@digilevate.com"
-                />
-                <div className="h-px bg-gray-700"></div>
-                <FounderProfile
-                    initial="A"
-                    name="Alessio Fano"
-                    role={t('founder_profile.alessio_role')}
-                    jobTitle={t('founder_profile.alessio_job_title')}
-                    description={t('founder_profile.alessio_description')}
-                    linkedinUrl="https://www.linkedin.com/in/alessio-giuseppe-fano/"
-                    emailAddress="alessio.fano@digilevate.com"
-                />
-            </div>
-        </div>
-    );
-};
-
-interface FounderProfileProps {
-    initial: string;
+interface TeamProfileProps {
+    image: string;
     name: string;
     role: string;
     jobTitle: string;
@@ -95,30 +95,71 @@ interface FounderProfileProps {
     emailAddress: string;
 }
 
-const FounderProfile: React.FC<FounderProfileProps> = ({ initial, name, role, jobTitle, description, linkedinUrl, emailAddress }) => {
+const TeamProfile: React.FC<TeamProfileProps> = ({ image, name, role, jobTitle, description, linkedinUrl, emailAddress }) => {
     const { t } = useTranslation();
+    const [imageError, setImageError] = React.useState(false);
+
     return (
-        <div className="flex flex-col items-center text-center gap-4 sm:flex-row sm:items-start sm:text-left sm:space-x-6 sm:gap-0">
-            <div className="w-20 h-20 bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl font-bold text-white">{initial}</span>
+        <div className="flex flex-col sm:flex-row sm:items-start sm:gap-10 group">
+            {/* Image Container */}
+            <div className="relative w-full aspect-[4/5] sm:w-44 sm:h-44 rounded-3xl sm:rounded-2xl overflow-hidden flex-shrink-0 border-2 border-white/10 sm:border-[#2d9bf0]/20 group-hover:border-[#2d9bf0] transition-all duration-500 shadow-2xl">
+                {!imageError ? (
+                    <img
+                        src={image}
+                        alt={name}
+                        className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                        onError={() => setImageError(true)}
+                    />
+                ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-[#2d9bf0] to-[#4db8ff] flex items-center justify-center text-white">
+                        <span className="text-4xl font-bold">{name.charAt(0)}</span>
+                    </div>
+                )}
+
+                {/* Mobile Overlay: ONLY Name & Role */}
+                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent sm:hidden">
+                    <h4 className="text-2xl font-bold text-white mb-1">{name}</h4>
+                    <p className="text-[#2d9bf0] font-bold text-[10px] uppercase tracking-widest">{role}</p>
+                </div>
+
+                {/* Desktop Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden sm:block"></div>
             </div>
-            <div className="flex-1">
-                <h4 className="text-xl font-bold text-white mb-1">{name}</h4>
-                <p className="text-[#2d9bf0] font-medium mb-3">{role}</p>
-                <p className="text-gray-300 text-base mb-2">{jobTitle}</p>
-                <p className="text-gray-400 text-sm mb-4">{description}</p>
-                <div className="flex items-center justify-center sm:justify-start space-x-4">
+
+            {/* Content Container (Description, Badge, Links) */}
+            <div className="flex-1 mt-6 sm:mt-0 space-y-4">
+                {/* Desktop Name & Role */}
+                <div className="hidden sm:block">
+                    <h4 className="text-3xl font-bold text-white mb-2 group-hover:text-[#2d9bf0] transition-colors">{name}</h4>
+                    <p className="text-[#2d9bf0] font-bold text-xs uppercase tracking-widest">{role}</p>
+                </div>
+
+                {/* Apprentice Badge (Always visible, outside image) */}
+                <div className="flex">
+                    <div className="bg-[#2d9bf0]/10 border border-[#2d9bf0]/30 rounded-full px-4 py-1.5 flex items-center">
+                        <span className="w-2 h-2 rounded-full bg-[#2d9bf0] mr-2 animate-pulse"></span>
+                        <span className="text-white text-[10px] font-bold uppercase tracking-widest">{jobTitle}</span>
+                    </div>
+                </div>
+
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed italic relative">
+                    <span className="text-[#2d9bf0] text-3xl absolute -left-5 -top-2 opacity-10 hidden sm:block">"</span>
+                    {description}
+                </p>
+
+                {/* Social Links */}
+                <div className="flex items-center space-x-6 pt-2">
                     <a
                         href={linkedinUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors"
+                        className="flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-[#2d9bf0] transition-colors"
                     >
                         <Linkedin className="w-4 h-4 mr-2" /> {t('founder_profile.linkedin')}
                     </a>
                     <a
                         href={`mailto:${emailAddress}`}
-                        className="flex items-center text-sm border border-[#2d9bf0] text-[#2d9bf0] hover:bg-[#2d9bf0] hover:text-white px-3 py-1.5 rounded-md transition-colors"
+                        className="flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-[#2d9bf0] transition-colors"
                     >
                         <Mail className="w-4 h-4 mr-2" /> {t('founder_profile.email')}
                     </a>

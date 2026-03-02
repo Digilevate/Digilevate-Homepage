@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import CoreServicesSection from './components/CoreServicesSection';
 import PortfolioSection from './components/PortfolioSection';
+import AIAutomationSection from './components/AIAutomationSection';
 import AboutSection from './components/AboutSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
@@ -16,13 +17,14 @@ import Impressum from './pages/Impressum';
 const MainPage = () => (
     <>
         <Helmet>
-            <title>Webagentur Zürich: Professionelles Webdesign & SEO für KMU | digilevate</title>
-            <meta name="description" content="Ihre Webagentur in Zürich für massgeschneiderte Webseiten, SEO-Optimierung und digitales Wachstum. Jetzt kostenlose Beratung für Ihr KMU anfragen!" />
+            <title>Digilevate | Loris Imbrogno - Webagentur Zürich für Webdesign & SEO</title>
+            <meta name="description" content="Digilevate: Ihre Webagentur in Zürich geführt von Loris Imbrogno. Wir bieten massgeschneidertes Webdesign, SEO & KI-Automation für KMU. Jetzt Termin vereinbaren!" />
         </Helmet>
         <Header />
         <main className="pt-16">
             <HeroSection />
             <CoreServicesSection />
+            <AIAutomationSection />
             <PortfolioSection />
             <AboutSection />
             <TestimonialsSection />

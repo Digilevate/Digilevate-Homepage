@@ -76,7 +76,7 @@ const Stats: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
                 <StatItem value="20+" label={t('testimonials_section.projects_completed')} />
                 <StatItem value="100%" label={t('testimonials_section.client_satisfaction')} />
-                <StatItem value="10+" label={t('testimonials_section.happy_clients')} />
+                <StatItem value="15+" label={t('testimonials_section.happy_clients')} />
                 <StatItem value="5.0" label={t('testimonials_section.average_rating')} />
             </div>
         </div>
